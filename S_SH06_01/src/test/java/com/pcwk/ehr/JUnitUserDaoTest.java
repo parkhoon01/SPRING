@@ -10,14 +10,23 @@ import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+@RunWith(SpringJUnit4ClassRunner.class) //JUnit 기능을 스프링 프레임으로 확장!
+@ContextConfiguration(locations = "/applicationContext.xml") // applicationContext.xml loading
 public class JUnitUserDaoTest {
 
 	final Logger LOG = LogManager.getLogger(this.getClass());
 	
+	
+	@Autowired // Context 프레임워크는 변수 타입과 일치하는 컨텍스트 내의 빈을 찾고, 변수에 주입
 	ApplicationContext context;
+	
+	@Autowired
 	UserDao dao;
 	UserVO user01;
 	UserVO user02;
@@ -44,6 +53,10 @@ public class JUnitUserDaoTest {
 			// 단건 조회
 			UserVO vsUser01 = dao.get(user01);
 			isSameUser(vsUser01, user01);
+			
+			// 단건 조회
+			UserVO vsUser02 = dao.get(user02);
+			isSameUser(vsUser02, user02);
 				
 			
 		} catch (SQLException e) {
@@ -60,6 +73,17 @@ public class JUnitUserDaoTest {
 		assertEquals(vsVO.getPasswd(), orgVO.getPasswd());
 	}
 	
+	@Test(expected = NullPointerException.class)
+	public void getFailure() throws SQLException{
+		LOG.debug("=====================");
+		LOG.debug("=2. getFailure()=");
+		LOG.debug("=====================");
+		
+		dao.deleteAll();
+		
+		dao.get(user01);
+	}
+	
 	@Before
 	public void setUp() throws Exception {
 		LOG.debug("=====================");
@@ -69,9 +93,12 @@ public class JUnitUserDaoTest {
 		user01 = new UserVO("p77", "박훈", "4321");
 		user02 = new UserVO("p770", "박훈0", "4321");
 		
-		context = new GenericXmlApplicationContext("/applicationContext.xml");
+//		context = new GenericXmlApplicationContext("/applicationContext.xml");
+//		dao = context.getBean("userDao", UserDao.class);
 		
-		dao = context.getBean("userDao", UserDao.class);
+		LOG.debug("context: " + context);
+		LOG.debug("dao: " + dao);
+		
 		assertNotNull(context);
 		assertNotNull(dao);
 	}
