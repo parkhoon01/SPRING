@@ -1,0 +1,1669 @@
+[2022-06-10 09:16:05.396] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:16:05.406] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a52dba3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2a5c8d3f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@752325ad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@279fedbd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@b3ca52e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45c7e403, org.springframework.test.context.event.EventPublishingTestExecutionListener@2925bf5b]
+[2022-06-10 09:16:05.725] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:60) - =====================
+[2022-06-10 09:16:05.725] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:61) - =0. setUp()=
+[2022-06-10 09:16:05.725] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:62) - =====================
+[2022-06-10 09:16:05.749] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:81) - context: org.springframework.context.support.GenericApplicationContext@68267da0, started on Fri Jun 10 09:16:05 KST 2022
+[2022-06-10 09:16:05.750] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:82) - userService: com.pcwk.ehr.UserServiceImpl@5495333e
+[2022-06-10 09:16:05.750] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:83) - dao: com.pcwk.ehr.UserDaoImpl@2a225dd7
+[2022-06-10 09:16:05.750] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:84) - dataSource: org.springframework.jdbc.datasource.SimpleDriverDataSource@61eaec38
+[2022-06-10 09:16:05.750] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:85) - transactionManager: org.springframework.jdbc.datasource.DataSourceTransactionManager@125290e5
+[2022-06-10 09:16:05.750] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:86) - javaMailSenderImpl: org.springframework.mail.javamail.JavaMailSenderImpl@6fa34d52
+[2022-06-10 09:16:05.751] DEBUG TestUserService.<init>(TestUserService.java:23) - ================================
+[2022-06-10 09:16:05.751] DEBUG TestUserService.<init>(TestUserService.java:24) - =this.uId=p77000
+[2022-06-10 09:16:05.751] DEBUG TestUserService.<init>(TestUserService.java:25) - ================================
+[2022-06-10 09:16:05.752] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:16:05.752] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:16:05.752] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:16:05.752] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:16:05.752] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-10 09:16:06.229] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:16:06.230] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:16:06.230] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2bef51f2]
+[2022-06-10 09:16:06.230] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:16:06.231] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:16:06.231] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-10 09:16:06.294] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:16:06.294] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:16:06.294] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@1e1d3956]
+[2022-06-10 09:16:06.295] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:16:06.295] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:16:06.295] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-10 09:16:06.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:16:06.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:16:06.353] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@53f48368]
+[2022-06-10 09:16:06.353] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:16:06.353] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:16:06.353] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77000
+[2022-06-10 09:16:06.408] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:16:06.408] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:16:06.408] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@73db4768]
+[2022-06-10 09:16:06.408] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:16:06.409] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:16:06.409] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770000
+[2022-06-10 09:16:06.481] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:16:06.481] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-10 09:16:06.482] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:16:06.482] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-10 09:16:06.482] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-10 09:16:06.482] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 0
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:16:06.608] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77
+[2022-06-10 09:16:06.609] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈
+[2022-06-10 09:16:06.609] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:16:06.609] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-10 09:16:06.609] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 49
+[2022-06-10 09:16:06.609] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 0
+[2022-06-10 09:16:06.609] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:16:06.690] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:16:06.690] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:16:06.690] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2bef51f2]
+[2022-06-10 09:16:06.690] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:16:06.690] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:16:06.690] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770
+[2022-06-10 09:16:06.691] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0
+[2022-06-10 09:16:06.691] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:16:06.691] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-10 09:16:06.691] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 50
+[2022-06-10 09:16:06.691] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 10
+[2022-06-10 09:16:06.691] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@1e1d3956]
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p7700
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈00
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:16:06.778] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-10 09:16:06.779] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-10 09:16:06.779] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 29
+[2022-06-10 09:16:06.779] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:16:06.829] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:16:06.829] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:16:06.829] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@53f48368]
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77000
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈000
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 30
+[2022-06-10 09:16:06.830] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:16:06.883] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:16:06.883] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:16:06.883] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@73db4768]
+[2022-06-10 09:16:06.883] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:16:06.883] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:16:06.883] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770000
+[2022-06-10 09:16:06.884] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0000
+[2022-06-10 09:16:06.884] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:16:06.884] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 3
+[2022-06-10 09:16:06.884] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 52
+[2022-06-10 09:16:06.884] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 31
+[2022-06-10 09:16:06.884] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:16:06.934] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:16:06.934] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-10 09:16:06.934] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:16:06.934] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-10 09:16:06.934] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-10 09:16:06.934] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-10 09:16:06.987] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-10 09:16:06.987] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 5
+[2022-06-10 09:16:06.987] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-10 09:16:07.034] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:128) - ==============================
+[2022-06-10 09:16:07.034] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:129) - =pram: 
+UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:16:07.034] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:130) - =sql: 
+SELECT   u_id,			
+			name,           
+			passwd,         
+			u_level,        
+			login,          
+			recommend,      
+			email,          
+			TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+FROM hr_member 		    
+WHERE u_id LIKE ? || '%' 
+ORDER BY u_id  		    
+
+[2022-06-10 09:16:07.034] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:131) - ==============================
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=2022-06-10 09:16:07, toString()=com.pcwk.ehr.UserVO@32057e6]
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:16:07, toString()=com.pcwk.ehr.UserVO@26be6ca7]
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=2022-06-10 09:16:07, toString()=com.pcwk.ehr.UserVO@6ea1bcdc]
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=2022-06-10 09:16:07, toString()=com.pcwk.ehr.UserVO@759fad4]
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=2022-06-10 09:16:07, toString()=com.pcwk.ehr.UserVO@64712be]
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:95) - ==============================
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:96) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:16:07, toString()=com.pcwk.ehr.UserVO@26be6ca7]
+[2022-06-10 09:16:07.043] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:97) - =sql: 
+UPDATE hr_member      		
+SET 	name 		= 	?,      
+		passwd 		= 	?,      
+		u_level 	= 	?,     	
+		login 		= 	?,      
+		recommend 	= 	?,   	
+		email 		= 	?,      
+		reg_dt 		= 	SYSDATE 
+WHERE u_id 		= 	?  		
+
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:98) - ==============================
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 박훈0
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 4321
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 2
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 50
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 10
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:16:07.044] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: p770
+[2022-06-10 09:16:07.058] DEBUG UserServiceImpl.sendupgradeMail(UserServiceImpl.java:119) - =====================
+[2022-06-10 09:16:07.058] DEBUG UserServiceImpl.sendupgradeMail(UserServiceImpl.java:120) - =sendupgradeMail=qkrgns0514@naver.com
+[2022-06-10 09:16:07.058] DEBUG UserServiceImpl.sendupgradeMail(UserServiceImpl.java:121) - =====================
+[2022-06-10 09:16:07.595] DEBUG TestUserService.upgradeLevel(TestUserService.java:37) - ================================
+[2022-06-10 09:16:07.596] DEBUG TestUserService.upgradeLevel(TestUserService.java:38) - =upgradeLevel=
+[2022-06-10 09:16:07.596] DEBUG TestUserService.upgradeLevel(TestUserService.java:39) - ================================
+[2022-06-10 09:16:07.596] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:17) - ================================
+[2022-06-10 09:16:07.597] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:18) - =TestUserServiceException=TestUserServiceExceptionp77000
+[2022-06-10 09:16:07.597] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:19) - ================================
+[2022-06-10 09:16:07.598] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:85) - =====================
+[2022-06-10 09:16:07.598] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:86) - =rollback=
+[2022-06-10 09:16:07.598] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:87) - =====================
+[2022-06-10 09:16:07.602] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:135) - =========================
+[2022-06-10 09:16:07.602] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:136) - =allOrNothing Exception: TestUserServiceExceptionp77000
+[2022-06-10 09:16:07.602] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:137) - =========================
+[2022-06-10 09:16:07.602] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:260) - ==============================
+[2022-06-10 09:16:07.603] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:261) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2bef51f2]
+[2022-06-10 09:16:07.603] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:262) - =sql: 
+SELECT u_id,       
+	      name,       
+		  passwd,     
+		  u_level,    
+		  login,      
+		  recommend,  
+		  email,      
+		  TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+	FROM              
+	     hr_member    
+	WHERE u_id = ?    
+
+[2022-06-10 09:16:07.603] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:263) - ==============================
+[2022-06-10 09:16:07.603] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:266) - =Object param: p770
+[2022-06-10 09:16:07.667] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:275) - ==============================
+[2022-06-10 09:16:07.667] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:276) - =outVO: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:16:07, toString()=com.pcwk.ehr.UserVO@2449cff7]
+[2022-06-10 09:16:07.667] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:277) - ==============================
+[2022-06-10 09:23:28.115] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:23:28.125] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7a8c8dcf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@24269709, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2aceadd4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24aed80c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a52dba3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a5c8d3f, org.springframework.test.context.event.EventPublishingTestExecutionListener@752325ad]
+[2022-06-10 09:23:28.398] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:61) - =====================
+[2022-06-10 09:23:28.398] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:62) - =0. setUp()=
+[2022-06-10 09:23:28.398] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:63) - =====================
+[2022-06-10 09:23:28.419] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:82) - context: org.springframework.context.support.GenericApplicationContext@d21a74c, started on Fri Jun 10 09:23:28 KST 2022
+[2022-06-10 09:23:28.419] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:83) - userService: com.pcwk.ehr.UserServiceImpl@5495333e
+[2022-06-10 09:23:28.419] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:84) - dao: com.pcwk.ehr.UserDaoImpl@2a225dd7
+[2022-06-10 09:23:28.419] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:85) - dataSource: org.springframework.jdbc.datasource.SimpleDriverDataSource@61eaec38
+[2022-06-10 09:23:28.419] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:86) - transactionManager: org.springframework.jdbc.datasource.DataSourceTransactionManager@125290e5
+[2022-06-10 09:23:28.419] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:87) - mailSender: org.springframework.mail.javamail.JavaMailSenderImpl@6fa34d52
+[2022-06-10 09:23:28.420] DEBUG TestUserService.<init>(TestUserService.java:23) - ================================
+[2022-06-10 09:23:28.420] DEBUG TestUserService.<init>(TestUserService.java:24) - =this.uId=p77000
+[2022-06-10 09:23:28.421] DEBUG TestUserService.<init>(TestUserService.java:25) - ================================
+[2022-06-10 09:23:28.421] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:23:28.421] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:23:28.421] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:23:28.421] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:23:28.422] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-10 09:23:28.890] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:23:28.890] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:23:28.891] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2bef51f2]
+[2022-06-10 09:23:28.891] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:23:28.891] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:23:28.891] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-10 09:23:28.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:23:28.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:23:28.965] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@1e1d3956]
+[2022-06-10 09:23:28.965] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:23:28.965] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:23:28.965] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-10 09:23:29.022] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:23:29.022] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:23:29.022] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@53f48368]
+[2022-06-10 09:23:29.022] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:23:29.022] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:23:29.023] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77000
+[2022-06-10 09:23:29.073] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:23:29.073] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:23:29.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@73db4768]
+[2022-06-10 09:23:29.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:23:29.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:23:29.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770000
+[2022-06-10 09:23:29.121] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:23:29.121] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-10 09:23:29.122] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:23:29.122] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-10 09:23:29.122] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-10 09:23:29.122] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 0
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:23:29.226] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77
+[2022-06-10 09:23:29.227] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈
+[2022-06-10 09:23:29.227] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:23:29.227] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-10 09:23:29.227] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 49
+[2022-06-10 09:23:29.227] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 0
+[2022-06-10 09:23:29.227] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:23:29.271] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:23:29.271] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2bef51f2]
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 50
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 10
+[2022-06-10 09:23:29.272] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:23:29.321] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:23:29.321] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:23:29.321] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@1e1d3956]
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p7700
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈00
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 29
+[2022-06-10 09:23:29.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@53f48368]
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77000
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈000
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-10 09:23:29.367] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-10 09:23:29.368] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 30
+[2022-06-10 09:23:29.368] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@73db4768]
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770000
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0000
+[2022-06-10 09:23:29.411] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:23:29.412] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 3
+[2022-06-10 09:23:29.412] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 52
+[2022-06-10 09:23:29.412] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 31
+[2022-06-10 09:23:29.412] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:23:29.456] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:23:29.456] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-10 09:23:29.456] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:23:29.456] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-10 09:23:29.457] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-10 09:23:29.457] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-10 09:23:29.500] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-10 09:23:29.500] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 5
+[2022-06-10 09:23:29.500] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-10 09:23:29.543] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:128) - ==============================
+[2022-06-10 09:23:29.543] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:129) - =pram: 
+UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7ef27d7f]
+[2022-06-10 09:23:29.543] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:130) - =sql: 
+SELECT   u_id,			
+			name,           
+			passwd,         
+			u_level,        
+			login,          
+			recommend,      
+			email,          
+			TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+FROM hr_member 		    
+WHERE u_id LIKE ? || '%' 
+ORDER BY u_id  		    
+
+[2022-06-10 09:23:29.543] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:131) - ==============================
+[2022-06-10 09:23:29.552] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=2022-06-10 09:23:30, toString()=com.pcwk.ehr.UserVO@32057e6]
+[2022-06-10 09:23:29.552] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:23:30, toString()=com.pcwk.ehr.UserVO@26be6ca7]
+[2022-06-10 09:23:29.552] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=2022-06-10 09:23:30, toString()=com.pcwk.ehr.UserVO@6ea1bcdc]
+[2022-06-10 09:23:29.552] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=2022-06-10 09:23:30, toString()=com.pcwk.ehr.UserVO@759fad4]
+[2022-06-10 09:23:29.552] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=2022-06-10 09:23:30, toString()=com.pcwk.ehr.UserVO@64712be]
+[2022-06-10 09:23:29.552] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:95) - ==============================
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:96) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:23:30, toString()=com.pcwk.ehr.UserVO@26be6ca7]
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:97) - =sql: 
+UPDATE hr_member      		
+SET 	name 		= 	?,      
+		passwd 		= 	?,      
+		u_level 	= 	?,     	
+		login 		= 	?,      
+		recommend 	= 	?,   	
+		email 		= 	?,      
+		reg_dt 		= 	SYSDATE 
+WHERE u_id 		= 	?  		
+
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:98) - ==============================
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 박훈0
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 4321
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 2
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 50
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 10
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:23:29.553] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: p770
+[2022-06-10 09:23:30.158] DEBUG TestUserService.upgradeLevel(TestUserService.java:37) - ================================
+[2022-06-10 09:23:30.159] DEBUG TestUserService.upgradeLevel(TestUserService.java:38) - =upgradeLevel=
+[2022-06-10 09:23:30.159] DEBUG TestUserService.upgradeLevel(TestUserService.java:39) - ================================
+[2022-06-10 09:23:30.160] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:17) - ================================
+[2022-06-10 09:23:30.160] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:18) - =TestUserServiceException=TestUserServiceExceptionp77000
+[2022-06-10 09:23:30.161] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:19) - ================================
+[2022-06-10 09:23:30.161] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:86) - =====================
+[2022-06-10 09:23:30.162] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:87) - =rollback=
+[2022-06-10 09:23:30.162] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:88) - =====================
+[2022-06-10 09:23:30.167] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:136) - =========================
+[2022-06-10 09:23:30.168] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:137) - =allOrNothing Exception: TestUserServiceExceptionp77000
+[2022-06-10 09:23:30.168] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:138) - =========================
+[2022-06-10 09:23:30.168] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:260) - ==============================
+[2022-06-10 09:23:30.169] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:261) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2bef51f2]
+[2022-06-10 09:23:30.169] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:262) - =sql: 
+SELECT u_id,       
+	      name,       
+		  passwd,     
+		  u_level,    
+		  login,      
+		  recommend,  
+		  email,      
+		  TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+	FROM              
+	     hr_member    
+	WHERE u_id = ?    
+
+[2022-06-10 09:23:30.169] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:263) - ==============================
+[2022-06-10 09:23:30.170] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:266) - =Object param: p770
+[2022-06-10 09:23:30.224] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:275) - ==============================
+[2022-06-10 09:23:30.224] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:276) - =outVO: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:23:30, toString()=com.pcwk.ehr.UserVO@62da83ed]
+[2022-06-10 09:23:30.224] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:277) - ==============================
+[2022-06-10 09:39:51.072] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:39:51.081] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7a8c8dcf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@24269709, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2aceadd4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@24aed80c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a52dba3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a5c8d3f, org.springframework.test.context.event.EventPublishingTestExecutionListener@752325ad]
+[2022-06-10 09:39:51.185] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2aceadd4] to prepare test instance [com.pcwk.ehr.JunitUserServiceTest@6d4e5011]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unexpected failure during bean definition parsing
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:288) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:540) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:111) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:281) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElement(BeanDefinitionParserDelegate.java:842) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElements(BeanDefinitionParserDelegate.java:712) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:525) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-10 09:43:12.234] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:43:12.244] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a52dba3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2a5c8d3f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@752325ad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@279fedbd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@b3ca52e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45c7e403, org.springframework.test.context.event.EventPublishingTestExecutionListener@2925bf5b]
+[2022-06-10 09:43:12.361] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@752325ad] to prepare test instance [com.pcwk.ehr.JunitUserServiceTest@fba92d3]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unexpected failure during bean definition parsing
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:288) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:540) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:111) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:281) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElement(BeanDefinitionParserDelegate.java:842) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElements(BeanDefinitionParserDelegate.java:712) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:525) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-10 09:43:29.326] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:43:29.336] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3a52dba3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2a5c8d3f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@752325ad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@279fedbd, org.springframework.test.context.transaction.TransactionalTestExecutionListener@b3ca52e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@45c7e403, org.springframework.test.context.event.EventPublishingTestExecutionListener@2925bf5b]
+[2022-06-10 09:43:29.433] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@752325ad] to prepare test instance [com.pcwk.ehr.JunitUserServiceTest@fba92d3]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unexpected failure during bean definition parsing
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:288) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:540) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:111) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:281) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElement(BeanDefinitionParserDelegate.java:842) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElements(BeanDefinitionParserDelegate.java:712) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:525) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-10 09:45:46.083] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:45:46.093] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24aed80c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3a52dba3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2a5c8d3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@752325ad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@279fedbd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@b3ca52e, org.springframework.test.context.event.EventPublishingTestExecutionListener@45c7e403]
+[2022-06-10 09:45:46.190] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2a5c8d3f] to prepare test instance [com.pcwk.ehr.JunitUserServiceTest@67c33749]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unexpected failure during bean definition parsing
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:288) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:540) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:111) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:281) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElement(BeanDefinitionParserDelegate.java:842) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElements(BeanDefinitionParserDelegate.java:712) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:525) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-10 09:46:11.571] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:46:11.581] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24aed80c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3a52dba3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2a5c8d3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@752325ad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@279fedbd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@b3ca52e, org.springframework.test.context.event.EventPublishingTestExecutionListener@45c7e403]
+[2022-06-10 09:46:11.683] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2a5c8d3f] to prepare test instance [com.pcwk.ehr.JunitUserServiceTest@67c33749]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) ~[.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:?]
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Unexpected failure during bean definition parsing
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'; nested exception is org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:288) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:540) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+Caused by: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Tag 'property' must have a 'name' attribute
+Offending resource: class path resource [applicationContext.xml]
+Bean 'dummyMailSender'
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:119) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:111) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:281) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElement(BeanDefinitionParserDelegate.java:842) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertyElements(BeanDefinitionParserDelegate.java:712) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:525) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:437) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:405) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.processBeanDefinition(DefaultBeanDefinitionDocumentReader.java:306) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:197) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:176) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:511) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:338) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:265) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.18.jar:5.3.18]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.18.jar:5.3.18]
+	... 26 more
+[2022-06-10 09:46:42.437] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-10 09:46:42.449] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@24aed80c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3a52dba3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2a5c8d3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@752325ad, org.springframework.test.context.transaction.TransactionalTestExecutionListener@279fedbd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@b3ca52e, org.springframework.test.context.event.EventPublishingTestExecutionListener@45c7e403]
+[2022-06-10 09:46:42.759] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:65) - =====================
+[2022-06-10 09:46:42.759] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:66) - =0. setUp()=
+[2022-06-10 09:46:42.759] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:67) - =====================
+[2022-06-10 09:46:42.761] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:86) - context: org.springframework.context.support.GenericApplicationContext@68267da0, started on Fri Jun 10 09:46:42 KST 2022
+[2022-06-10 09:46:42.761] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:87) - userService: com.pcwk.ehr.UserServiceImpl@934b6cb
+[2022-06-10 09:46:42.762] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:88) - dao: com.pcwk.ehr.UserDaoImpl@55cf0d14
+[2022-06-10 09:46:42.762] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:89) - dataSource: org.springframework.jdbc.datasource.SimpleDriverDataSource@3b74ac8
+[2022-06-10 09:46:42.762] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:90) - transactionManager: org.springframework.jdbc.datasource.DataSourceTransactionManager@27adc16e
+[2022-06-10 09:46:42.762] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:91) - mailSender: com.pcwk.ehr.DummyMailSender@b83a9be
+[2022-06-10 09:46:42.763] DEBUG TestUserService.<init>(TestUserService.java:23) - ================================
+[2022-06-10 09:46:42.763] DEBUG TestUserService.<init>(TestUserService.java:24) - =this.uId=p77000
+[2022-06-10 09:46:42.763] DEBUG TestUserService.<init>(TestUserService.java:25) - ================================
+[2022-06-10 09:46:42.763] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:46:42.763] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2b175c00]
+[2022-06-10 09:46:42.763] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:46:42.763] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:46:42.764] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-10 09:46:43.227] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:46:43.227] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:46:43.227] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7a8fa663]
+[2022-06-10 09:46:43.227] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:46:43.227] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:46:43.228] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-10 09:46:43.305] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:46:43.305] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:46:43.305] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@546ccad7]
+[2022-06-10 09:46:43.305] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:46:43.305] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:46:43.305] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-10 09:46:43.359] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:46:43.359] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:46:43.359] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7a527389]
+[2022-06-10 09:46:43.359] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:46:43.359] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:46:43.359] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77000
+[2022-06-10 09:46:43.429] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:46:43.430] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-10 09:46:43.431] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4264b240]
+[2022-06-10 09:46:43.431] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-10 09:46:43.431] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-10 09:46:43.431] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770000
+[2022-06-10 09:46:43.480] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-10 09:46:43.480] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-10 09:46:43.480] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2b175c00]
+[2022-06-10 09:46:43.480] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-10 09:46:43.480] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-10 09:46:43.480] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-10 09:46:43.578] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 0
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2b175c00]
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈
+[2022-06-10 09:46:43.579] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:46:43.580] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-10 09:46:43.580] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 49
+[2022-06-10 09:46:43.580] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 0
+[2022-06-10 09:46:43.580] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7a8fa663]
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:46:43.639] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-10 09:46:43.640] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 50
+[2022-06-10 09:46:43.640] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 10
+[2022-06-10 09:46:43.640] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@546ccad7]
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p7700
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈00
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-10 09:46:43.699] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-10 09:46:43.700] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 29
+[2022-06-10 09:46:43.700] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:46:43.743] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:46:43.743] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:46:43.743] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7a527389]
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77000
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈000
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 30
+[2022-06-10 09:46:43.744] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4264b240]
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770000
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0000
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-10 09:46:43.789] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 3
+[2022-06-10 09:46:43.790] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 52
+[2022-06-10 09:46:43.790] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 31
+[2022-06-10 09:46:43.790] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:46:43.832] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-10 09:46:43.832] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-10 09:46:43.832] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2b175c00]
+[2022-06-10 09:46:43.832] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-10 09:46:43.832] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-10 09:46:43.832] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-10 09:46:43.877] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-10 09:46:43.877] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 5
+[2022-06-10 09:46:43.877] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-10 09:46:43.928] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:128) - ==============================
+[2022-06-10 09:46:43.928] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:129) - =pram: 
+UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2b175c00]
+[2022-06-10 09:46:43.928] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:130) - =sql: 
+SELECT   u_id,			
+			name,           
+			passwd,         
+			u_level,        
+			login,          
+			recommend,      
+			email,          
+			TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+FROM hr_member 		    
+WHERE u_id LIKE ? || '%' 
+ORDER BY u_id  		    
+
+[2022-06-10 09:46:43.928] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:131) - ==============================
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=2022-06-10 09:46:44, toString()=com.pcwk.ehr.UserVO@2a2da905]
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:46:44, toString()=com.pcwk.ehr.UserVO@24f360b2]
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=2022-06-10 09:46:44, toString()=com.pcwk.ehr.UserVO@60cf80e7]
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=2022-06-10 09:46:44, toString()=com.pcwk.ehr.UserVO@302fec27]
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=2022-06-10 09:46:44, toString()=com.pcwk.ehr.UserVO@770d0ea6]
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:95) - ==============================
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:96) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:46:44, toString()=com.pcwk.ehr.UserVO@24f360b2]
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:97) - =sql: 
+UPDATE hr_member      		
+SET 	name 		= 	?,      
+		passwd 		= 	?,      
+		u_level 	= 	?,     	
+		login 		= 	?,      
+		recommend 	= 	?,   	
+		email 		= 	?,      
+		reg_dt 		= 	SYSDATE 
+WHERE u_id 		= 	?  		
+
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:98) - ==============================
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 박훈0
+[2022-06-10 09:46:43.938] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 4321
+[2022-06-10 09:46:43.939] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 2
+[2022-06-10 09:46:43.939] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 50
+[2022-06-10 09:46:43.939] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 10
+[2022-06-10 09:46:43.939] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: qkrgns0514@naver.com
+[2022-06-10 09:46:43.939] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: p770
+[2022-06-10 09:46:43.941] DEBUG DummyMailSender.send(DummyMailSender.java:15) - ***************************************
+[2022-06-10 09:46:43.941] DEBUG DummyMailSender.send(DummyMailSender.java:16) - **개발에서는 메일이 발송되지 않습니다!!!**
+[2022-06-10 09:46:43.941] DEBUG DummyMailSender.send(DummyMailSender.java:17) - ***************************************
+[2022-06-10 09:46:43.941] DEBUG TestUserService.upgradeLevel(TestUserService.java:37) - ================================
+[2022-06-10 09:46:43.941] DEBUG TestUserService.upgradeLevel(TestUserService.java:38) - =upgradeLevel=
+[2022-06-10 09:46:43.941] DEBUG TestUserService.upgradeLevel(TestUserService.java:39) - ================================
+[2022-06-10 09:46:43.941] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:17) - ================================
+[2022-06-10 09:46:43.941] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:18) - =TestUserServiceException=TestUserServiceExceptionp77000
+[2022-06-10 09:46:43.941] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:19) - ================================
+[2022-06-10 09:46:43.942] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:86) - =====================
+[2022-06-10 09:46:43.942] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:87) - =rollback=
+[2022-06-10 09:46:43.942] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:88) - =====================
+[2022-06-10 09:46:43.945] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:140) - =========================
+[2022-06-10 09:46:43.946] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:141) - =allOrNothing Exception: TestUserServiceExceptionp77000
+[2022-06-10 09:46:43.946] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:142) - =========================
+[2022-06-10 09:46:43.946] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:260) - ==============================
+[2022-06-10 09:46:43.946] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:261) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7a8fa663]
+[2022-06-10 09:46:43.946] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:262) - =sql: 
+SELECT u_id,       
+	      name,       
+		  passwd,     
+		  u_level,    
+		  login,      
+		  recommend,  
+		  email,      
+		  TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+	FROM              
+	     hr_member    
+	WHERE u_id = ?    
+
+[2022-06-10 09:46:43.946] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:263) - ==============================
+[2022-06-10 09:46:43.946] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:266) - =Object param: p770
+[2022-06-10 09:46:43.997] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:275) - ==============================
+[2022-06-10 09:46:43.998] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:276) - =outVO: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-10 09:46:44, toString()=com.pcwk.ehr.UserVO@2f2bf0e2]
+[2022-06-10 09:46:43.998] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:277) - ==============================
+[2022-06-10 10:29:28.770] DEBUG ReflectionTest.main(ReflectionTest.java:21) - name의 length: 6
+[2022-06-10 10:32:04.259] DEBUG ReflectionTest.main(ReflectionTest.java:23) - name의 length: 6
+[2022-06-10 10:32:04.261] DEBUG ReflectionTest.main(ReflectionTest.java:27) - lengthMethod: public int java.lang.String.length()
+[2022-06-10 10:33:43.069] DEBUG ReflectionTest.main(ReflectionTest.java:24) - name의 length: 6
+[2022-06-10 10:33:43.071] DEBUG ReflectionTest.main(ReflectionTest.java:29) - 리플렉션의 name의 length: 6
+[2022-06-10 10:35:12.048] DEBUG ReflectionTest.main(ReflectionTest.java:24) - name의 length: 6
+[2022-06-10 10:35:12.050] DEBUG ReflectionTest.main(ReflectionTest.java:30) - 리플렉션의 name의 length: 6
+[2022-06-10 10:35:12.050] DEBUG ReflectionTest.main(ReflectionTest.java:31) - ======================
+[2022-06-10 10:35:12.050] DEBUG ReflectionTest.main(ReflectionTest.java:35) - charAt: S
+[2022-06-10 10:37:46.553] DEBUG ReflectionTest.main(ReflectionTest.java:24) - name의 length: 6
+[2022-06-10 10:37:46.555] DEBUG ReflectionTest.main(ReflectionTest.java:30) - 리플렉션의 name의 length: 6
+[2022-06-10 10:37:46.555] DEBUG ReflectionTest.main(ReflectionTest.java:31) - ======================
+[2022-06-10 10:37:46.555] DEBUG ReflectionTest.main(ReflectionTest.java:35) - charAt: S
+[2022-06-10 10:38:04.589] DEBUG ReflectionTest.main(ReflectionTest.java:24) - name의 length: 6
+[2022-06-10 10:38:04.591] DEBUG ReflectionTest.main(ReflectionTest.java:30) - 리플렉션의 name의 length: 6
+[2022-06-10 10:38:04.591] DEBUG ReflectionTest.main(ReflectionTest.java:31) - ======================
+[2022-06-10 10:38:04.591] DEBUG ReflectionTest.main(ReflectionTest.java:35) - charAt: S
+[2022-06-10 10:38:04.591] DEBUG ReflectionTest.main(ReflectionTest.java:40) - 리플렉션의 charAtMethod: S
+[2022-06-10 11:09:02.027] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:09:02.029] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:09:02.029] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:09:02.029] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:09:02.029] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:09:02.029] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:09:02.030] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:31) - Hello PCWK
+[2022-06-10 11:10:36.182] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:10:36.184] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:10:36.184] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:10:36.184] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:10:36.184] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:10:36.184] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:10:36.185] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:31) - Hello PCWK
+[2022-06-10 11:11:07.400] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:11:07.402] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:11:07.402] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:11:07.402] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:11:07.403] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:11:07.403] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:11:07.403] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:31) - Hello PCWK
+[2022-06-10 11:11:07.403] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - Hi PCWK
+[2022-06-10 11:11:49.339] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:11:49.341] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:11:49.341] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:11:49.341] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:11:49.341] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:11:49.341] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:11:49.342] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:31) - Hello PCWK
+[2022-06-10 11:11:49.342] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - Hi PCWK
+[2022-06-10 11:12:30.922] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:12:30.924] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:12:30.924] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:12:30.924] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:12:30.924] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:12:30.924] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:12:30.925] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:31) - Hello PCWK
+[2022-06-10 11:12:30.925] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - Hi PCWK
+[2022-06-10 11:12:30.925] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - Thank you PCWK
+[2022-06-10 11:12:57.223] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:12:57.225] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:12:57.225] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:12:57.225] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:12:57.225] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:12:57.226] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:12:57.226] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:31) - HELLO PCWK
+[2022-06-10 11:12:57.226] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - HI PCWK
+[2022-06-10 11:12:57.226] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - THANK YOU PCWK
+[2022-06-10 11:13:47.509] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:13:47.511] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:13:47.511] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:13:47.511] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:13:47.512] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:13:47.512] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:13:47.512] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:32) - Hello PCWK
+[2022-06-10 11:13:47.513] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - Hi PCWK
+[2022-06-10 11:13:47.513] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:34) - Thank you PCWK
+[2022-06-10 11:15:25.707] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:19) - =====================
+[2022-06-10 11:15:25.709] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:20) - =0. setUp=
+[2022-06-10 11:15:25.709] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:21) - =====================
+[2022-06-10 11:15:25.709] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:26) - =====================
+[2022-06-10 11:15:25.709] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:27) - =1. proxyTest=
+[2022-06-10 11:15:25.709] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:28) - =====================
+[2022-06-10 11:15:25.710] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:33) - HELLO PCWK
+[2022-06-10 11:15:25.710] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:34) - HI PCWK
+[2022-06-10 11:15:25.710] DEBUG JunitProxyHelloTest.proxyTest(JunitProxyHelloTest.java:35) - THANK YOU PCWK
+[2022-06-10 11:34:53.446] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 11:34:53.448] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 11:34:53.449] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 11:34:53.450] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 11:35:45.115] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 11:35:45.117] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 11:35:45.117] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 11:35:45.118] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 11:35:45.119] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:35) - HI PCWK
+[2022-06-10 11:35:45.119] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:36) - THANK YOU PCWK
+[2022-06-10 11:37:10.640] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 11:37:10.642] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 11:37:10.642] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:10.644] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:10.644] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:35) - HI PCWK
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:10.644] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:37:10.645] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:37:10.645] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:36) - THANK YOU PCWK
+[2022-06-10 11:39:21.423] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 11:39:21.425] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 11:39:21.425] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 11:39:21.426] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.427] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.427] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:35) - HI PCWK
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:39:21.427] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.428] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:36) - THANK YOU PCWK
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+
+[2022-06-10 11:39:21.428] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.082] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 11:40:28.084] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 11:40:28.084] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 11:40:28.085] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.085] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+sayHello
+[2022-06-10 11:40:28.086] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.086] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 11:40:28.086] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.086] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+sayHi
+[2022-06-10 11:40:28.086] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.086] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:35) - HI PCWK
+[2022-06-10 11:40:28.086] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.086] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+sayThankYou
+[2022-06-10 11:40:28.086] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.087] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:36) - THANK YOU PCWK
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+sayHello
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+sayHi
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:27) - +++++++++++++++++++++++++++++++++
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:28) - +invoke()+sayThankYou
+[2022-06-10 11:40:28.087] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.383] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 12:02:56.385] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 12:02:56.385] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 12:02:56.386] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.386] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHello
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.387] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHi
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.387] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:35) - HI PCWK
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayThankYou
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.387] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:36) - THANK YOU PCWK
+[2022-06-10 12:02:56.387] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHello
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHi
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayThankYou
+[2022-06-10 12:02:56.388] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.504] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 12:06:31.506] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 12:06:31.506] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 12:06:31.507] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.507] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHello
+[2022-06-10 12:06:31.507] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.507] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 12:06:31.507] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHi
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.508] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:35) - HI PCWK
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayThankYou
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.508] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:36) - THANK YOU PCWK
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHello
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.508] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.509] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHi
+[2022-06-10 12:06:31.509] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.509] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:06:31.509] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayThankYou
+[2022-06-10 12:06:31.509] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.106] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:22) - =====================
+[2022-06-10 12:11:08.108] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:23) - =0. setUp=
+[2022-06-10 12:11:08.108] DEBUG JunitProxyHelloTest.setUp(JunitProxyHelloTest.java:24) - =====================
+[2022-06-10 12:11:08.110] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.110] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHello
+[2022-06-10 12:11:08.110] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.111] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:34) - HELLO PCWK
+[2022-06-10 12:11:08.111] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.111] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHi
+[2022-06-10 12:11:08.111] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.111] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:35) - HI PCWK
+[2022-06-10 12:11:08.111] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.111] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayThankYou
+[2022-06-10 12:11:08.111] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.112] DEBUG JunitProxyHelloTest.dynamicProxy(JunitProxyHelloTest.java:36) - Thank you Pcwk
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHello
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayHi
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:29) - +++++++++++++++++++++++++++++++++
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:30) - +invoke()+sayThankYou
+[2022-06-10 12:11:08.112] DEBUG UppercaseHandler.invoke(UppercaseHandler.java:31) - +++++++++++++++++++++++++++++++++
