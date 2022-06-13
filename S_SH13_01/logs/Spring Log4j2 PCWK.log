@@ -1,0 +1,859 @@
+[2022-06-13 09:37:06.707] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 09:37:06.717] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45c7e403, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2925bf5b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@710f4dc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1ff4931d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65e98b1c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61322f9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@6ad82709]
+[2022-06-13 09:37:07.008] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:65) - =====================
+[2022-06-13 09:37:07.008] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:66) - =0. setUp()=
+[2022-06-13 09:37:07.008] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:67) - =====================
+[2022-06-13 09:37:07.031] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:86) - context: org.springframework.context.support.GenericApplicationContext@548e6d58, started on Mon Jun 13 09:37:06 KST 2022
+[2022-06-13 09:37:07.031] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:87) - userService: com.pcwk.ehr.UserServiceImpl@563e4951
+[2022-06-13 09:37:07.031] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:88) - dao: com.pcwk.ehr.UserDaoImpl@4066c471
+[2022-06-13 09:37:07.031] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:89) - dataSource: org.springframework.jdbc.datasource.SimpleDriverDataSource@2b175c00
+[2022-06-13 09:37:07.032] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:90) - transactionManager: org.springframework.jdbc.datasource.DataSourceTransactionManager@3eb81efb
+[2022-06-13 09:37:07.032] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:91) - mailSender: com.pcwk.ehr.DummyMailSender@1ae8bcbc
+[2022-06-13 09:37:07.033] DEBUG TestUserService.<init>(TestUserService.java:23) - ================================
+[2022-06-13 09:37:07.033] DEBUG TestUserService.<init>(TestUserService.java:24) - =this.uId=p77000
+[2022-06-13 09:37:07.033] DEBUG TestUserService.<init>(TestUserService.java:25) - ================================
+[2022-06-13 09:37:07.033] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 09:37:07.033] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 09:37:07.033] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 09:37:07.033] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 09:37:07.034] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 09:37:07.655] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 09:37:07.655] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 09:37:07.655] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@485a3466]
+[2022-06-13 09:37:07.655] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 09:37:07.655] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 09:37:07.655] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 09:37:07.704] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 09:37:07.704] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 09:37:07.704] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4264b240]
+[2022-06-13 09:37:07.704] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 09:37:07.705] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 09:37:07.705] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 09:37:07.780] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 09:37:07.780] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 09:37:07.780] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6bb75258]
+[2022-06-13 09:37:07.780] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 09:37:07.780] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 09:37:07.780] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77000
+[2022-06-13 09:37:07.847] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 09:37:07.847] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 09:37:07.847] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@76f7d241]
+[2022-06-13 09:37:07.847] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 09:37:07.847] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 09:37:07.848] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770000
+[2022-06-13 09:37:07.902] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 09:37:07.902] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 09:37:07.902] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 09:37:07.902] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 09:37:07.902] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 09:37:07.902] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 09:37:08.005] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 09:37:08.005] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 0
+[2022-06-13 09:37:08.005] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 09:37:08.005] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 09:37:08.005] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 09:37:08.005] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 09:37:08.005] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 09:37:08.006] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77
+[2022-06-13 09:37:08.006] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈
+[2022-06-13 09:37:08.006] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 09:37:08.006] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-13 09:37:08.006] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 49
+[2022-06-13 09:37:08.006] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 0
+[2022-06-13 09:37:08.006] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 09:37:08.078] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@485a3466]
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 50
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 10
+[2022-06-13 09:37:08.079] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 09:37:08.175] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 09:37:08.175] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 09:37:08.175] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4264b240]
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p7700
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈00
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 29
+[2022-06-13 09:37:08.176] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 09:37:08.254] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 09:37:08.254] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 09:37:08.254] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6bb75258]
+[2022-06-13 09:37:08.254] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 09:37:08.254] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 09:37:08.254] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77000
+[2022-06-13 09:37:08.255] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈000
+[2022-06-13 09:37:08.255] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 09:37:08.255] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-13 09:37:08.255] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-13 09:37:08.255] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 30
+[2022-06-13 09:37:08.255] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 09:37:08.321] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 09:37:08.321] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 09:37:08.321] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@76f7d241]
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770000
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0000
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 3
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 52
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 31
+[2022-06-13 09:37:08.322] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 09:37:08.380] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 09:37:08.380] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 09:37:08.381] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 09:37:08.381] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 09:37:08.381] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 09:37:08.381] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 09:37:08.434] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 09:37:08.434] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 5
+[2022-06-13 09:37:08.434] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 09:37:08.524] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:128) - ==============================
+[2022-06-13 09:37:08.524] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:129) - =pram: 
+UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 09:37:08.524] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:130) - =sql: 
+SELECT   u_id,			
+			name,           
+			passwd,         
+			u_level,        
+			login,          
+			recommend,      
+			email,          
+			TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+FROM hr_member 		    
+WHERE u_id LIKE ? || '%' 
+ORDER BY u_id  		    
+
+[2022-06-13 09:37:08.524] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:131) - ==============================
+[2022-06-13 09:37:08.544] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=2022-06-13 09:37:07, toString()=com.pcwk.ehr.UserVO@1b11ef33]
+[2022-06-13 09:37:08.544] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 09:37:07, toString()=com.pcwk.ehr.UserVO@476aac9]
+[2022-06-13 09:37:08.544] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=2022-06-13 09:37:07, toString()=com.pcwk.ehr.UserVO@6cea706c]
+[2022-06-13 09:37:08.544] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=2022-06-13 09:37:07, toString()=com.pcwk.ehr.UserVO@3bd7f8dc]
+[2022-06-13 09:37:08.545] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=2022-06-13 09:37:07, toString()=com.pcwk.ehr.UserVO@2f2bf0e2]
+[2022-06-13 09:37:08.545] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:95) - ==============================
+[2022-06-13 09:37:08.545] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:96) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 09:37:07, toString()=com.pcwk.ehr.UserVO@476aac9]
+[2022-06-13 09:37:08.545] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:97) - =sql: 
+UPDATE hr_member      		
+SET 	name 		= 	?,      
+		passwd 		= 	?,      
+		u_level 	= 	?,     	
+		login 		= 	?,      
+		recommend 	= 	?,   	
+		email 		= 	?,      
+		reg_dt 		= 	SYSDATE 
+WHERE u_id 		= 	?  		
+
+[2022-06-13 09:37:08.545] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:98) - ==============================
+[2022-06-13 09:37:08.545] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 박훈0
+[2022-06-13 09:37:08.545] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 4321
+[2022-06-13 09:37:08.546] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 2
+[2022-06-13 09:37:08.546] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 50
+[2022-06-13 09:37:08.546] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 10
+[2022-06-13 09:37:08.546] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: qkrgns0514@naver.com
+[2022-06-13 09:37:08.546] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: p770
+[2022-06-13 09:37:08.548] DEBUG DummyMailSender.send(DummyMailSender.java:15) - ***************************************
+[2022-06-13 09:37:08.548] DEBUG DummyMailSender.send(DummyMailSender.java:16) - **개발에서는 메일이 발송되지 않습니다!!!**
+[2022-06-13 09:37:08.548] DEBUG DummyMailSender.send(DummyMailSender.java:17) - ***************************************
+[2022-06-13 09:37:08.549] DEBUG TestUserService.upgradeLevel(TestUserService.java:37) - ================================
+[2022-06-13 09:37:08.549] DEBUG TestUserService.upgradeLevel(TestUserService.java:38) - =upgradeLevel=
+[2022-06-13 09:37:08.549] DEBUG TestUserService.upgradeLevel(TestUserService.java:39) - ================================
+[2022-06-13 09:37:08.549] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:17) - ================================
+[2022-06-13 09:37:08.549] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:18) - =TestUserServiceException=TestUserServiceExceptionp77000
+[2022-06-13 09:37:08.549] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:19) - ================================
+[2022-06-13 09:37:08.549] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:86) - =====================
+[2022-06-13 09:37:08.549] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:87) - =rollback=
+[2022-06-13 09:37:08.549] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:88) - =====================
+[2022-06-13 09:37:08.553] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:140) - =========================
+[2022-06-13 09:37:08.553] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:141) - =allOrNothing Exception: TestUserServiceExceptionp77000
+[2022-06-13 09:37:08.553] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:142) - =========================
+[2022-06-13 09:37:08.553] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:260) - ==============================
+[2022-06-13 09:37:08.553] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:261) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@485a3466]
+[2022-06-13 09:37:08.553] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:262) - =sql: 
+SELECT u_id,       
+	      name,       
+		  passwd,     
+		  u_level,    
+		  login,      
+		  recommend,  
+		  email,      
+		  TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+	FROM              
+	     hr_member    
+	WHERE u_id = ?    
+
+[2022-06-13 09:37:08.553] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:263) - ==============================
+[2022-06-13 09:37:08.553] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:266) - =Object param: p770
+[2022-06-13 09:37:08.622] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:275) - ==============================
+[2022-06-13 09:37:08.623] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:276) - =outVO: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 09:37:07, toString()=com.pcwk.ehr.UserVO@363f6148]
+[2022-06-13 09:37:08.623] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:277) - ==============================
+[2022-06-13 10:09:03.315] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:09:03.325] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3d285d7e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@40005471, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2cd76f31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@367ffa75, org.springframework.test.context.transaction.TransactionalTestExecutionListener@49438269, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@ba2f4ec, org.springframework.test.context.event.EventPublishingTestExecutionListener@1c1bbc4e]
+[2022-06-13 10:09:03.737] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:28) - =====================
+[2022-06-13 10:09:03.737] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:29) - =0. setUp()=
+[2022-06-13 10:09:03.737] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:30) - =====================
+[2022-06-13 10:09:03.739] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:31) - context: org.springframework.context.support.GenericApplicationContext@2d2ffcb7, started on Mon Jun 13 10:09:03 KST 2022
+[2022-06-13 10:10:03.931] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:10:03.941] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:10:04.268] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:31) - =====================
+[2022-06-13 10:10:04.268] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:32) - =0. setUp()=
+[2022-06-13 10:10:04.268] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:10:04.270] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:10:04 KST 2022
+[2022-06-13 10:10:04.272] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:10:54.812] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:10:54.821] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:10:55.177] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:31) - =====================
+[2022-06-13 10:10:55.177] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:32) - =0. setUp()=
+[2022-06-13 10:10:55.177] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:10:55.179] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:10:54 KST 2022
+[2022-06-13 10:10:55.181] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:10:55.183] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:18) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:10:55.183] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:19) - [BEFORE]메소드 수행전
+[2022-06-13 10:10:55.183] DEBUG MemberImpl.doSave(MemberImpl.java:10) - ------------------------
+[2022-06-13 10:10:55.183] DEBUG MemberImpl.doSave(MemberImpl.java:11) - -doSave()-
+[2022-06-13 10:10:55.183] DEBUG MemberImpl.doSave(MemberImpl.java:12) - ------------------------
+[2022-06-13 10:10:55.183] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:23) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:10:55.184] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:24) - [AFTER]메소드 수행후
+[2022-06-13 10:24:00.092] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:24:00.106] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:24:00.476] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:31) - =====================
+[2022-06-13 10:24:00.476] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:32) - =0. setUp()=
+[2022-06-13 10:24:00.476] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:24:00.478] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:24:00 KST 2022
+[2022-06-13 10:24:00.480] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:24:00.481] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:18) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:24:00.482] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:19) - [BEFORE]메소드 수행전
+[2022-06-13 10:24:00.482] DEBUG MemberImpl.doSave(MemberImpl.java:10) - ------------------------
+[2022-06-13 10:24:00.482] DEBUG MemberImpl.doSave(MemberImpl.java:11) - -doSave()-
+[2022-06-13 10:24:00.482] DEBUG MemberImpl.doSave(MemberImpl.java:12) - ------------------------
+[2022-06-13 10:24:00.482] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:23) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:24:00.482] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:24) - [AFTER]메소드 수행후
+[2022-06-13 10:32:56.748] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:32:56.758] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:32:57.090] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:31) - =====================
+[2022-06-13 10:32:57.090] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:32) - =0. setUp()=
+[2022-06-13 10:32:57.090] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:32:57.092] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:32:56 KST 2022
+[2022-06-13 10:32:57.095] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:32:57.101] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:18) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:32:57.102] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:19) - [BEFORE]메소드 수행전
+[2022-06-13 10:32:57.103] DEBUG MemberImpl.doSave(MemberImpl.java:10) - ------------------------
+[2022-06-13 10:32:57.103] DEBUG MemberImpl.doSave(MemberImpl.java:11) - -doSave()-
+[2022-06-13 10:32:57.103] DEBUG MemberImpl.doSave(MemberImpl.java:12) - ------------------------
+[2022-06-13 10:32:57.103] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:22) - method: doSave
+[2022-06-13 10:32:57.103] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:24) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:32:57.103] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:25) - [AFTER]메소드 수행후
+[2022-06-13 10:39:58.947] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:39:58.957] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:39:59.323] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:31) - =====================
+[2022-06-13 10:39:59.323] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:32) - =0. setUp()=
+[2022-06-13 10:39:59.323] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:39:59.325] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:39:59 KST 2022
+[2022-06-13 10:39:59.327] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:39:59.329] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:18) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:39:59.329] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:19) - [BEFORE]메소드 수행전
+[2022-06-13 10:39:59.330] DEBUG MemberImpl.doSave(MemberImpl.java:10) - ------------------------
+[2022-06-13 10:39:59.330] DEBUG MemberImpl.doSave(MemberImpl.java:11) - -doSave()-
+[2022-06-13 10:39:59.330] DEBUG MemberImpl.doSave(MemberImpl.java:12) - ------------------------
+[2022-06-13 10:39:59.330] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:22) - method: doSave
+[2022-06-13 10:39:59.331] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:24) - ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2022-06-13 10:39:59.331] DEBUG AroundAdvice.aroundLog(AroundAdvice.java:25) - [AFTER]메소드 수행후
+[2022-06-13 10:40:58.647] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:40:58.659] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:40:58.889] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberImpl' defined in class path resource [com/pcwk/ehr/aspectj/perform/aspectj-around-applicationContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#4b8729ff' of type [org.springframework.aop.aspectj.AspectJAroundAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+[2022-06-13 10:40:58.891] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269] to prepare test instance [com.pcwk.ehr.aspectj.JunitAspectJAround@222a59e6]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.13.jar:5.3.13]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberImpl' defined in class path resource [com/pcwk/ehr/aspectj/perform/aspectj-around-applicationContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#4b8729ff' of type [org.springframework.aop.aspectj.AspectJAroundAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#4b8729ff' of type [org.springframework.aop.aspectj.AspectJAroundAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.aop.config.MethodLocatingFactoryBean.setBeanFactory(MethodLocatingFactoryBean.java:80) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1791) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+[2022-06-13 10:42:10.084] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:42:10.094] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:42:10.314] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberImpl' defined in class path resource [com/pcwk/ehr/aspectj/perform/aspectj-around-applicationContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#4b8729ff' of type [org.springframework.aop.aspectj.AspectJAroundAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+[2022-06-13 10:42:10.316] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269] to prepare test instance [com.pcwk.ehr.aspectj.JunitAspectJAround@222a59e6]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.13.jar:5.3.13]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberImpl' defined in class path resource [com/pcwk/ehr/aspectj/perform/aspectj-around-applicationContext.xml]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#4b8729ff' of type [org.springframework.aop.aspectj.AspectJAroundAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': Cannot create inner bean '(inner bean)#4b8729ff' of type [org.springframework.aop.aspectj.AspectJAroundAdvice] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4b8729ff': Cannot create inner bean '(inner bean)#54e041a4' of type [org.springframework.aop.config.MethodLocatingFactoryBean] while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#54e041a4': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: java.lang.IllegalArgumentException: Unable to locate method [aroundLog] on bean [performAdvice]
+	at org.springframework.aop.config.MethodLocatingFactoryBean.setBeanFactory(MethodLocatingFactoryBean.java:80) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1791) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:707) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:198) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:253) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+[2022-06-13 10:43:33.883] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:43:33.892] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:43:34.259] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:31) - =====================
+[2022-06-13 10:43:34.259] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:32) - =0. setUp()=
+[2022-06-13 10:43:34.259] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:43:34.261] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:43:34 KST 2022
+[2022-06-13 10:43:34.263] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:43:34.270] DEBUG MemberImpl.doSave(MemberImpl.java:10) - ------------------------
+[2022-06-13 10:43:34.270] DEBUG MemberImpl.doSave(MemberImpl.java:11) - -doSave()-
+[2022-06-13 10:43:34.270] DEBUG MemberImpl.doSave(MemberImpl.java:12) - ------------------------
+[2022-06-13 10:43:34.271] DEBUG PerformAdvice.performLog(PerformAdvice.java:30) - [doSave]메소드 경과시간: 0(ms)초
+[2022-06-13 10:48:16.011] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:48:16.023] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:48:16.374] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:48:16.374] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - =0. setUp()=
+[2022-06-13 10:48:16.374] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - =====================
+[2022-06-13 10:48:16.376] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:36) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:48:16 KST 2022
+[2022-06-13 10:48:16.378] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:37) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:48:16.388] DEBUG MemberImpl.doSave(MemberImpl.java:15) - ------------------------
+[2022-06-13 10:48:16.388] DEBUG MemberImpl.doSave(MemberImpl.java:16) - -doSave()-
+[2022-06-13 10:48:16.388] DEBUG MemberImpl.doSave(MemberImpl.java:17) - ------------------------
+[2022-06-13 10:48:16.389] DEBUG PerformAdvice.performLog(PerformAdvice.java:30) - [doSave]메소드 경과시간: 3(ms)초
+[2022-06-13 10:48:33.860] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 10:48:33.870] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2cd76f31, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@367ffa75, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@49438269, org.springframework.test.context.support.DirtiesContextTestExecutionListener@ba2f4ec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1c1bbc4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55fe41ea, org.springframework.test.context.event.EventPublishingTestExecutionListener@fbd1f6]
+[2022-06-13 10:48:34.223] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:33) - =====================
+[2022-06-13 10:48:34.223] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:34) - =0. setUp()=
+[2022-06-13 10:48:34.223] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:35) - =====================
+[2022-06-13 10:48:34.225] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:36) - context: org.springframework.context.support.GenericApplicationContext@31f9b85e, started on Mon Jun 13 10:48:34 KST 2022
+[2022-06-13 10:48:34.227] DEBUG JunitAspectJAround.setUp(JunitAspectJAround.java:37) - member: com.pcwk.ehr.aspectj.MemberImpl@a4add54
+[2022-06-13 10:48:34.232] DEBUG MemberImpl.doSave(MemberImpl.java:15) - ------------------------
+[2022-06-13 10:48:34.232] DEBUG MemberImpl.doSave(MemberImpl.java:16) - -doSave()-
+[2022-06-13 10:48:34.232] DEBUG MemberImpl.doSave(MemberImpl.java:17) - ------------------------
+[2022-06-13 10:48:34.233] DEBUG PerformAdvice.performLog(PerformAdvice.java:30) - [doSave]메소드 경과시간: 3(ms)초
+[2022-06-13 10:48:34.233] DEBUG MemberImpl.doUpdate(MemberImpl.java:23) - ------------------------
+[2022-06-13 10:48:34.234] DEBUG MemberImpl.doUpdate(MemberImpl.java:24) - -doUpdate()-
+[2022-06-13 10:48:34.234] DEBUG MemberImpl.doUpdate(MemberImpl.java:25) - ------------------------
+[2022-06-13 10:48:34.234] DEBUG PerformAdvice.performLog(PerformAdvice.java:30) - [doUpdate]메소드 경과시간: 0(ms)초

@@ -1,0 +1,1489 @@
+[2022-06-13 11:42:21.304] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 11:42:21.313] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45c7e403, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2925bf5b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@710f4dc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1ff4931d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65e98b1c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61322f9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@6ad82709]
+[2022-06-13 11:42:21.638] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:65) - =====================
+[2022-06-13 11:42:21.638] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:66) - =0. setUp()=
+[2022-06-13 11:42:21.638] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:67) - =====================
+[2022-06-13 11:42:21.661] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:86) - context: org.springframework.context.support.GenericApplicationContext@548e6d58, started on Mon Jun 13 11:42:21 KST 2022
+[2022-06-13 11:42:21.661] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:87) - userService: com.pcwk.ehr.UserServiceImpl@563e4951
+[2022-06-13 11:42:21.661] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:88) - dao: com.pcwk.ehr.UserDaoImpl@4066c471
+[2022-06-13 11:42:21.661] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:89) - dataSource: org.springframework.jdbc.datasource.SimpleDriverDataSource@2b175c00
+[2022-06-13 11:42:21.661] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:90) - transactionManager: org.springframework.jdbc.datasource.DataSourceTransactionManager@3eb81efb
+[2022-06-13 11:42:21.662] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:91) - mailSender: com.pcwk.ehr.DummyMailSender@1ae8bcbc
+[2022-06-13 11:42:21.663] DEBUG TestUserService.<init>(TestUserService.java:23) - ================================
+[2022-06-13 11:42:21.663] DEBUG TestUserService.<init>(TestUserService.java:24) - =this.uId=p77000
+[2022-06-13 11:42:21.663] DEBUG TestUserService.<init>(TestUserService.java:25) - ================================
+[2022-06-13 11:42:21.663] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:21.663] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 11:42:21.663] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:21.664] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:21.664] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:22.285] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:22.285] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:22.286] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@485a3466]
+[2022-06-13 11:42:22.286] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:22.286] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:22.286] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:22.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:22.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:22.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4264b240]
+[2022-06-13 11:42:22.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:22.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:22.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:22.419] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:22.419] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:22.419] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6bb75258]
+[2022-06-13 11:42:22.419] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:22.419] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:22.419] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77000
+[2022-06-13 11:42:22.474] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:22.474] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:22.474] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@76f7d241]
+[2022-06-13 11:42:22.474] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:22.474] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:22.474] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770000
+[2022-06-13 11:42:22.532] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:22.532] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:22.532] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 11:42:22.533] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:22.533] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:22.533] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:22.643] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:22.643] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 0
+[2022-06-13 11:42:22.643] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 49
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 0
+[2022-06-13 11:42:22.644] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@485a3466]
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 11:42:22.707] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-13 11:42:22.708] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 50
+[2022-06-13 11:42:22.708] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 10
+[2022-06-13 11:42:22.708] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4264b240]
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p7700
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈00
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 11:42:22.762] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-13 11:42:22.763] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-13 11:42:22.763] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 29
+[2022-06-13 11:42:22.763] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6bb75258]
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77000
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈000
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 2
+[2022-06-13 11:42:22.807] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 51
+[2022-06-13 11:42:22.808] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 30
+[2022-06-13 11:42:22.808] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@76f7d241]
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p770000
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈0000
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 11:42:22.849] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 3
+[2022-06-13 11:42:22.850] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 52
+[2022-06-13 11:42:22.850] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 31
+[2022-06-13 11:42:22.850] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 11:42:22.925] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 11:42:22.925] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:22.925] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 11:42:22.926] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:22.926] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:22.926] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:22.977] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:22.977] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 5
+[2022-06-13 11:42:22.978] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:23.026] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:128) - ==============================
+[2022-06-13 11:42:23.026] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:129) - =pram: 
+UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@6d026701]
+[2022-06-13 11:42:23.027] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:130) - =sql: 
+SELECT   u_id,			
+			name,           
+			passwd,         
+			u_level,        
+			login,          
+			recommend,      
+			email,          
+			TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+FROM hr_member 		    
+WHERE u_id LIKE ? || '%' 
+ORDER BY u_id  		    
+
+[2022-06-13 11:42:23.027] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:131) - ==============================
+[2022-06-13 11:42:23.035] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=2022-06-13 11:42:22, toString()=com.pcwk.ehr.UserVO@1b11ef33]
+[2022-06-13 11:42:23.035] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 11:42:22, toString()=com.pcwk.ehr.UserVO@476aac9]
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=2022-06-13 11:42:22, toString()=com.pcwk.ehr.UserVO@6cea706c]
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=2022-06-13 11:42:22, toString()=com.pcwk.ehr.UserVO@3bd7f8dc]
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:138) - vo: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=2022-06-13 11:42:22, toString()=com.pcwk.ehr.UserVO@2f2bf0e2]
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:95) - ==============================
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:96) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 11:42:22, toString()=com.pcwk.ehr.UserVO@476aac9]
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:97) - =sql: 
+UPDATE hr_member      		
+SET 	name 		= 	?,      
+		passwd 		= 	?,      
+		u_level 	= 	?,     	
+		login 		= 	?,      
+		recommend 	= 	?,   	
+		email 		= 	?,      
+		reg_dt 		= 	SYSDATE 
+WHERE u_id 		= 	?  		
+
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:98) - ==============================
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 박훈0
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 4321
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 2
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 50
+[2022-06-13 11:42:23.036] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: 10
+[2022-06-13 11:42:23.037] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: qkrgns0514@naver.com
+[2022-06-13 11:42:23.037] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:104) - =Object param: p770
+[2022-06-13 11:42:23.039] DEBUG DummyMailSender.send(DummyMailSender.java:15) - ***************************************
+[2022-06-13 11:42:23.039] DEBUG DummyMailSender.send(DummyMailSender.java:16) - **개발에서는 메일이 발송되지 않습니다!!!**
+[2022-06-13 11:42:23.039] DEBUG DummyMailSender.send(DummyMailSender.java:17) - ***************************************
+[2022-06-13 11:42:23.039] DEBUG TestUserService.upgradeLevel(TestUserService.java:37) - ================================
+[2022-06-13 11:42:23.039] DEBUG TestUserService.upgradeLevel(TestUserService.java:38) - =upgradeLevel=
+[2022-06-13 11:42:23.039] DEBUG TestUserService.upgradeLevel(TestUserService.java:39) - ================================
+[2022-06-13 11:42:23.039] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:17) - ================================
+[2022-06-13 11:42:23.039] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:18) - =TestUserServiceException=TestUserServiceExceptionp77000
+[2022-06-13 11:42:23.039] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:19) - ================================
+[2022-06-13 11:42:23.039] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:86) - =====================
+[2022-06-13 11:42:23.040] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:87) - =rollback=
+[2022-06-13 11:42:23.040] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:88) - =====================
+[2022-06-13 11:42:23.042] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:140) - =========================
+[2022-06-13 11:42:23.042] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:141) - =allOrNothing Exception: TestUserServiceExceptionp77000
+[2022-06-13 11:42:23.042] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:142) - =========================
+[2022-06-13 11:42:23.042] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:260) - ==============================
+[2022-06-13 11:42:23.042] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:261) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@485a3466]
+[2022-06-13 11:42:23.042] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:262) - =sql: 
+SELECT u_id,       
+	      name,       
+		  passwd,     
+		  u_level,    
+		  login,      
+		  recommend,  
+		  email,      
+		  TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+	FROM              
+	     hr_member    
+	WHERE u_id = ?    
+
+[2022-06-13 11:42:23.042] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:263) - ==============================
+[2022-06-13 11:42:23.042] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:266) - =Object param: p770
+[2022-06-13 11:42:23.091] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:275) - ==============================
+[2022-06-13 11:42:23.091] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:276) - =outVO: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 11:42:22, toString()=com.pcwk.ehr.UserVO@363f6148]
+[2022-06-13 11:42:23.091] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:277) - ==============================
+[2022-06-13 11:42:37.664] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 11:42:37.675] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@302552ec, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d285d7e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40005471, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2cd76f31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@367ffa75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49438269, org.springframework.test.context.event.EventPublishingTestExecutionListener@ba2f4ec]
+[2022-06-13 11:42:37.942] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:37.942] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:37.942] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:37.963] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:37 KST 2022
+[2022-06-13 11:42:37.963] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:37.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:37.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:42:37.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:37.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:37.965] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:38.514] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 11:42:38.515] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:38.515] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@636e8cc]
+[2022-06-13 11:42:38.515] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:38.515] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:38.515] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:38.651] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 11:42:38.651] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:38.651] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@12dae582]
+[2022-06-13 11:42:38.652] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:38.652] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:38.652] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:38.833] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 11:42:38.834] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:38.834] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:42:38.834] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:38.834] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:38.834] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:39.002] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:39.002] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:42:39.003] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:39.004] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:42:39.004] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:42:39.004] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:42:39.008] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:39.008] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:39.008] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:39.009] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:37 KST 2022
+[2022-06-13 11:42:39.009] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:39.009] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:135) - =====================
+[2022-06-13 11:42:39.009] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:136) - =1. addAndGet()=
+[2022-06-13 11:42:39.009] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:137) - =====================
+[2022-06-13 11:42:39.009] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:39.009] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:42:39.009] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:39.009] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:39.009] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:39.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:39.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:39.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@f19c9d2]
+[2022-06-13 11:42:39.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:39.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:39.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:39.379] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:39.379] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:39.379] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@a77614d]
+[2022-06-13 11:42:39.379] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:39.379] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:39.379] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:39.530] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:39.530] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:39.530] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:42:39.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:39.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:39.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:39.726] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:39.726] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:42:39.726] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:39.726] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:42:39.727] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:42:39.727] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:42:39.729] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:39.730] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:39.730] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:39.730] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:37 KST 2022
+[2022-06-13 11:42:39.730] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:39.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:39.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:42:39.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:39.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:39.731] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:39.903] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:39.903] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:39.903] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4cc76301]
+[2022-06-13 11:42:39.903] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:39.903] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:39.904] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:40.076] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:40.076] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:40.076] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7de0c6ae]
+[2022-06-13 11:42:40.077] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:40.077] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:40.077] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:40.221] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:40.221] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:40.221] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:42:40.221] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:40.221] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:40.221] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:40.346] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:40.346] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:42:40.346] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:40.346] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:42:40.346] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:42:40.346] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:42:44.868] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 11:42:44.878] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@302552ec, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d285d7e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40005471, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2cd76f31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@367ffa75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49438269, org.springframework.test.context.event.EventPublishingTestExecutionListener@ba2f4ec]
+[2022-06-13 11:42:45.154] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:45.154] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:45.154] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:45.175] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:44 KST 2022
+[2022-06-13 11:42:45.175] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:45.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:45.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:42:45.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:45.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:45.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:45.659] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:45.659] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:45.659] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@636e8cc]
+[2022-06-13 11:42:45.659] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:45.659] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:45.659] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:45.733] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:45.733] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:45.733] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@12dae582]
+[2022-06-13 11:42:45.733] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:45.733] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:45.733] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:45.792] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:45.792] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:45.792] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:42:45.792] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:45.792] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:45.792] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:45.901] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:45.901] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:42:45.902] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:45.903] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:42:45.903] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:42:45.903] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:44 KST 2022
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:135) - =====================
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:136) - =1. addAndGet()=
+[2022-06-13 11:42:45.907] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:137) - =====================
+[2022-06-13 11:42:45.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:45.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:42:45.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:45.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:45.908] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:45.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:45.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:45.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@f19c9d2]
+[2022-06-13 11:42:45.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:45.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:45.964] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:46.040] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:46.041] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:46.041] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@a77614d]
+[2022-06-13 11:42:46.041] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:46.041] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:46.041] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:46.114] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:46.114] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:46.115] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:42:46.115] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:46.115] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:46.115] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:46.172] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:46.172] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:42:46.172] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:46.172] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:42:46.172] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:42:46.172] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:42:46.175] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:46.175] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:46.175] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:46.175] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:44 KST 2022
+[2022-06-13 11:42:46.175] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:46.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:46.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:42:46.175] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:46.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:46.176] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:46.285] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:46.285] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:46.285] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4cc76301]
+[2022-06-13 11:42:46.286] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:46.286] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:46.286] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:46.356] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:46.356] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:46.356] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7de0c6ae]
+[2022-06-13 11:42:46.356] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:46.357] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:46.357] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:46.466] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:46.466] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:46.466] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:42:46.466] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:46.466] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:46.466] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:46.540] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:46.540] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:42:46.540] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:46.540] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:42:46.540] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:42:46.540] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:42:58.886] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 11:42:58.896] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@302552ec, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d285d7e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40005471, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2cd76f31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@367ffa75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49438269, org.springframework.test.context.event.EventPublishingTestExecutionListener@ba2f4ec]
+[2022-06-13 11:42:59.162] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:59.162] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:59.162] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:59.183] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:58 KST 2022
+[2022-06-13 11:42:59.183] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:59.184] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:59.184] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:42:59.184] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:59.184] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:59.184] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:59.649] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:59.649] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:59.649] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@636e8cc]
+[2022-06-13 11:42:59.649] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:59.649] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:59.650] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:42:59.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:59.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:59.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@12dae582]
+[2022-06-13 11:42:59.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:59.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:59.730] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:42:59.795] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:59.796] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:42:59.796] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:42:59.796] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:42:59.796] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:42:59.796] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:42:59.928] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:42:59.928] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:42:59.929] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:42:59.930] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:42:59.930] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:42:59.930] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:42:59.935] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:42:59.936] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:42:59.936] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:42:59.936] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:58 KST 2022
+[2022-06-13 11:42:59.936] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:42:59.936] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:135) - =====================
+[2022-06-13 11:42:59.936] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:136) - =1. addAndGet()=
+[2022-06-13 11:42:59.936] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:137) - =====================
+[2022-06-13 11:42:59.936] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:59.937] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:42:59.937] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:59.937] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:59.937] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:42:59.994] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:42:59.994] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:42:59.994] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@f19c9d2]
+[2022-06-13 11:42:59.994] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:42:59.994] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:42:59.994] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:00.061] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:00.061] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:00.061] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@a77614d]
+[2022-06-13 11:43:00.061] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:00.061] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:00.061] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:00.112] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:00.112] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:00.112] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:43:00.112] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:00.112] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:00.112] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:00.167] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:00.168] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:00.168] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:00.168] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:00.168] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:00.168] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:43:00.171] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:43:00.171] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:43:00.171] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:43:00.171] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:42:58 KST 2022
+[2022-06-13 11:43:00.171] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:43:00.171] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:00.172] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:43:00.172] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:00.172] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:00.172] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:43:00.225] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:00.225] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:00.225] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4cc76301]
+[2022-06-13 11:43:00.225] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:00.225] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:00.225] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:00.280] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:00.280] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:00.280] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7de0c6ae]
+[2022-06-13 11:43:00.280] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:00.280] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:00.281] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:00.334] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:00.334] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:00.335] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:43:00.335] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:00.335] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:00.335] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:00.416] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:00.416] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:00.416] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:00.416] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:00.416] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:00.416] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:43:01.884] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 11:43:01.894] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@302552ec, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d285d7e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40005471, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2cd76f31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@367ffa75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49438269, org.springframework.test.context.event.EventPublishingTestExecutionListener@ba2f4ec]
+[2022-06-13 11:43:02.174] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:43:02.174] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:43:02.174] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:43:02.199] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:43:01 KST 2022
+[2022-06-13 11:43:02.199] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:43:02.200] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:02.200] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:43:02.200] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:02.201] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:02.201] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:43:02.707] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:02.707] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:02.707] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@636e8cc]
+[2022-06-13 11:43:02.707] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:02.707] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:02.707] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:02.800] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:02.800] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:02.800] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@12dae582]
+[2022-06-13 11:43:02.800] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:02.800] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:02.800] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:02.872] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:02.872] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:02.872] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:43:02.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:02.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:02.873] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:03.007] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:03.008] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:03.008] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:03.009] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:03.009] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:03.009] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:43:03.013] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:43:03.013] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:43:03.013] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:43:03.014] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:43:01 KST 2022
+[2022-06-13 11:43:03.014] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:43:03.014] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:135) - =====================
+[2022-06-13 11:43:03.014] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:136) - =1. addAndGet()=
+[2022-06-13 11:43:03.014] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:137) - =====================
+[2022-06-13 11:43:03.014] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:03.014] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:43:03.014] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:03.014] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:03.015] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:43:03.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:03.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:03.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@f19c9d2]
+[2022-06-13 11:43:03.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:03.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:03.074] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:03.167] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:03.167] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:03.167] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@a77614d]
+[2022-06-13 11:43:03.168] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:03.168] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:03.168] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:03.245] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:03.245] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:03.245] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7f811d00]
+[2022-06-13 11:43:03.245] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:03.245] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:03.245] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:03.315] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:03.315] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:03.315] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:03.315] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:03.315] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:03.315] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:43:03.318] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:43:03.318] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:43:03.318] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:43:03.318] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:43:01 KST 2022
+[2022-06-13 11:43:03.318] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:43:03.318] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:03.319] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:43:03.319] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:03.319] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:03.319] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:43:03.403] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:03.403] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:03.403] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4cc76301]
+[2022-06-13 11:43:03.403] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:03.403] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:03.403] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:03.452] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:03.452] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:03.452] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7de0c6ae]
+[2022-06-13 11:43:03.452] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:03.452] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:03.452] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:03.530] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:03.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:03.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@754777cd]
+[2022-06-13 11:43:03.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:03.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:03.531] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:03.605] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:03.605] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:03.606] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:03.606] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:03.606] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:03.606] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:43:16.251] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 11:43:16.261] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@302552ec, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d285d7e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@40005471, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2cd76f31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@367ffa75, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@49438269, org.springframework.test.context.event.EventPublishingTestExecutionListener@ba2f4ec]
+[2022-06-13 11:43:16.519] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:43:16.520] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:43:16.520] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:43:16.541] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:43:16 KST 2022
+[2022-06-13 11:43:16.541] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:43:16.542] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:16.542] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:43:16.542] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:16.542] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:16.542] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:43:17.003] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.003] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.003] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@636e8cc]
+[2022-06-13 11:43:17.003] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.003] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.003] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:17.075] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.075] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.075] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@12dae582]
+[2022-06-13 11:43:17.075] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.075] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.075] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:17.125] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.125] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:17.125] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:43:17.125] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:17.125] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:17.125] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:17.218] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:17.218] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:17.218] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:201) - ==============================
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:202) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:203) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:204) - ==============================
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: p77
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 박훈
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 4321
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 1
+[2022-06-13 11:43:17.219] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: 0
+[2022-06-13 11:43:17.220] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:209) - =Object param: qkrgns0514@naver.com
+[2022-06-13 11:43:17.267] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =flag: 1
+[2022-06-13 11:43:17.267] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:17.267] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@7c51f34b]
+[2022-06-13 11:43:17.267] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:17.267] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:17.267] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:17.333] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:17.333] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 3
+[2022-06-13 11:43:17.333] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:17.336] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:17.337] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:17.337] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:43:16 KST 2022
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:135) - =====================
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:136) - =1. addAndGet()=
+[2022-06-13 11:43:17.342] DEBUG JUnitUserDaoTest.addAndGet(JUnitUserDaoTest.java:137) - =====================
+[2022-06-13 11:43:17.342] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.343] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2baa8d82]
+[2022-06-13 11:43:17.343] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.343] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.343] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:43:17.390] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 1
+[2022-06-13 11:43:17.390] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.390] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@a7e2d9d]
+[2022-06-13 11:43:17.390] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.390] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.390] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:17.434] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.434] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.434] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@4cc76301]
+[2022-06-13 11:43:17.435] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.435] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.435] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:17.477] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.477] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:17.477] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@2baa8d82]
+[2022-06-13 11:43:17.477] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:17.477] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:17.477] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:17.519] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:17.519] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:17.519] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:17.519] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:17.519] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:17.519] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 11:43:17.521] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:37) - =====================
+[2022-06-13 11:43:17.521] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:38) - =0. setUp()=
+[2022-06-13 11:43:17.521] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:39) - =====================
+[2022-06-13 11:43:17.522] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:48) - context: org.springframework.context.support.GenericApplicationContext@291b4bf5, started on Mon Jun 13 11:43:16 KST 2022
+[2022-06-13 11:43:17.522] DEBUG JUnitUserDaoTest.setUp(JUnitUserDaoTest.java:49) - dao: com.pcwk.ehr.UserDaoImpl@6a47b187
+[2022-06-13 11:43:17.522] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.522] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@21526f6c]
+[2022-06-13 11:43:17.522] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.522] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.522] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p77
+[2022-06-13 11:43:17.566] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.566] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.566] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@5471388b]
+[2022-06-13 11:43:17.566] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.566] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.567] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p770
+[2022-06-13 11:43:17.611] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.611] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:66) - ==============================
+[2022-06-13 11:43:17.611] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:67) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@3bffddff]
+[2022-06-13 11:43:17.611] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:68) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 11:43:17.611] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:69) - ==============================
+[2022-06-13 11:43:17.611] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:74) - =Object param: p7700
+[2022-06-13 11:43:17.656] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =flag: 0
+[2022-06-13 11:43:17.656] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:154) - ==============================
+[2022-06-13 11:43:17.656] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:155) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.UserVO@21526f6c]
+[2022-06-13 11:43:17.657] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:156) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 11:43:17.657] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:157) - ==============================
+[2022-06-13 11:43:17.657] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =Object param:p77
+[2022-06-13 11:43:17.722] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:162) - ==============================
+[2022-06-13 11:43:17.723] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =count: 2
+[2022-06-13 11:43:17.723] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:164) - ==============================
+[2022-06-13 11:43:17.723] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:202) - =====================
+[2022-06-13 11:43:17.723] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:203) - =9. tearDown()=
+[2022-06-13 11:43:17.723] DEBUG JUnitUserDaoTest.tearDown(JUnitUserDaoTest.java:204) - =====================
+[2022-06-13 12:02:19.063] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 12:02:19.073] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45c7e403, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2925bf5b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@710f4dc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1ff4931d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65e98b1c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61322f9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@6ad82709]
+[2022-06-13 12:02:19.252] WARN  AbstractApplicationContext.refresh(AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pcwk.ehr.DummyMailSender] for bean with name 'dummyMailSender' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pcwk.ehr.DummyMailSender
+[2022-06-13 12:02:19.256] ERROR TestContextManager.prepareTestInstance(TestContextManager.java:252) - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@710f4dc7] to prepare test instance [com.pcwk.ehr.JunitUserServiceTest@72c8e7b]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.13.jar:5.3.13]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.13.jar:5.3.13]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [com.pcwk.ehr.DummyMailSender] for bean with name 'dummyMailSender' defined in class path resource [applicationContext.xml]; nested exception is java.lang.ClassNotFoundException: com.pcwk.ehr.DummyMailSender
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:704) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1147) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:924) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+Caused by: java.lang.ClassNotFoundException: com.pcwk.ehr.DummyMailSender
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_202]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[?:1.8.0_202]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_202]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_202]
+	at java.lang.Class.forName(Class.java:348) ~[?:1.8.0_202]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:284) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:469) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1607) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1534) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:704) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1670) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1147) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:924) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:127) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:275) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:243) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.13.jar:5.3.13]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.13.jar:5.3.13]
+	... 26 more
+[2022-06-13 12:04:46.979] INFO  AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames(AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2022-06-13 12:04:46.991] INFO  AbstractTestContextBootstrapper.getTestExecutionListeners(AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@45c7e403, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2925bf5b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@710f4dc7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1ff4931d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@65e98b1c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61322f9d, org.springframework.test.context.event.EventPublishingTestExecutionListener@6ad82709]
+[2022-06-13 12:04:47.324] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:70) - =====================
+[2022-06-13 12:04:47.324] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:71) - =0. setUp()=
+[2022-06-13 12:04:47.324] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:72) - =====================
+[2022-06-13 12:04:47.348] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:91) - context: org.springframework.context.support.GenericApplicationContext@548e6d58, started on Mon Jun 13 12:04:47 KST 2022
+[2022-06-13 12:04:47.348] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:92) - userService: com.pcwk.ehr.user.service.UserServiceImpl@563e4951
+[2022-06-13 12:04:47.348] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:93) - dao: com.pcwk.ehr.user.dao.UserDaoImpl@4066c471
+[2022-06-13 12:04:47.349] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:94) - dataSource: org.springframework.jdbc.datasource.SimpleDriverDataSource@2b175c00
+[2022-06-13 12:04:47.349] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:95) - transactionManager: org.springframework.jdbc.datasource.DataSourceTransactionManager@3eb81efb
+[2022-06-13 12:04:47.349] DEBUG JunitUserServiceTest.setUp(JunitUserServiceTest.java:96) - mailSender: com.pcwk.ehr.cmn.DummyMailSender@1ae8bcbc
+[2022-06-13 12:04:47.351] DEBUG TestUserService.<init>(TestUserService.java:26) - ================================
+[2022-06-13 12:04:47.352] DEBUG TestUserService.<init>(TestUserService.java:27) - =this.uId=p77000
+[2022-06-13 12:04:47.352] DEBUG TestUserService.<init>(TestUserService.java:28) - ================================
+[2022-06-13 12:04:47.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:70) - ==============================
+[2022-06-13 12:04:47.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@6d026701]
+[2022-06-13 12:04:47.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:72) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 12:04:47.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:73) - ==============================
+[2022-06-13 12:04:47.352] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =Object param: p77
+[2022-06-13 12:04:47.838] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:82) - =flag: 0
+[2022-06-13 12:04:47.838] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:70) - ==============================
+[2022-06-13 12:04:47.838] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@485a3466]
+[2022-06-13 12:04:47.838] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:72) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 12:04:47.838] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:73) - ==============================
+[2022-06-13 12:04:47.838] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =Object param: p770
+[2022-06-13 12:04:47.901] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:82) - =flag: 0
+[2022-06-13 12:04:47.901] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:70) - ==============================
+[2022-06-13 12:04:47.901] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@4264b240]
+[2022-06-13 12:04:47.901] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:72) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 12:04:47.901] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:73) - ==============================
+[2022-06-13 12:04:47.902] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =Object param: p7700
+[2022-06-13 12:04:47.968] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:82) - =flag: 0
+[2022-06-13 12:04:47.968] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:70) - ==============================
+[2022-06-13 12:04:47.968] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@6bb75258]
+[2022-06-13 12:04:47.969] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:72) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 12:04:47.969] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:73) - ==============================
+[2022-06-13 12:04:47.969] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =Object param: p77000
+[2022-06-13 12:04:48.016] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:82) - =flag: 1
+[2022-06-13 12:04:48.016] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:70) - ==============================
+[2022-06-13 12:04:48.016] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:71) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@76f7d241]
+[2022-06-13 12:04:48.017] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:72) - =sql: 
+DELETE FROM hr_member      
+WHERE  u_id = 	?         
+
+[2022-06-13 12:04:48.017] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:73) - ==============================
+[2022-06-13 12:04:48.017] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:78) - =Object param: p770000
+[2022-06-13 12:04:48.084] DEBUG UserDaoImpl.doDelete(UserDaoImpl.java:82) - =flag: 1
+[2022-06-13 12:04:48.084] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:158) - ==============================
+[2022-06-13 12:04:48.084] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@6d026701]
+[2022-06-13 12:04:48.084] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:160) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 12:04:48.084] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:161) - ==============================
+[2022-06-13 12:04:48.084] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =Object param:p77
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:166) - ==============================
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:167) - =count: 0
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:168) - ==============================
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:205) - ==============================
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:206) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@6d026701]
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:207) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:208) - ==============================
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: p77
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 박훈
+[2022-06-13 12:04:48.206] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 4321
+[2022-06-13 12:04:48.207] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 1
+[2022-06-13 12:04:48.207] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 49
+[2022-06-13 12:04:48.207] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 0
+[2022-06-13 12:04:48.207] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: qkrgns0514@naver.com
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:217) - =flag: 1
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:205) - ==============================
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:206) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@485a3466]
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:207) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:208) - ==============================
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: p770
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 박훈0
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 4321
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 1
+[2022-06-13 12:04:48.259] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 50
+[2022-06-13 12:04:48.260] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 10
+[2022-06-13 12:04:48.260] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: qkrgns0514@naver.com
+[2022-06-13 12:04:48.305] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:217) - =flag: 1
+[2022-06-13 12:04:48.305] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:205) - ==============================
+[2022-06-13 12:04:48.305] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:206) - =param: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@4264b240]
+[2022-06-13 12:04:48.305] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:207) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 12:04:48.305] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:208) - ==============================
+[2022-06-13 12:04:48.305] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: p7700
+[2022-06-13 12:04:48.305] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 박훈00
+[2022-06-13 12:04:48.306] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 4321
+[2022-06-13 12:04:48.306] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 2
+[2022-06-13 12:04:48.306] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 51
+[2022-06-13 12:04:48.306] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 29
+[2022-06-13 12:04:48.306] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: qkrgns0514@naver.com
+[2022-06-13 12:04:48.348] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:217) - =flag: 1
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:205) - ==============================
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:206) - =param: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@6bb75258]
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:207) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:208) - ==============================
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: p77000
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 박훈000
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 4321
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 2
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 51
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 30
+[2022-06-13 12:04:48.349] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: qkrgns0514@naver.com
+[2022-06-13 12:04:48.397] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:217) - =flag: 1
+[2022-06-13 12:04:48.397] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:205) - ==============================
+[2022-06-13 12:04:48.397] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:206) - =param: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@76f7d241]
+[2022-06-13 12:04:48.397] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:207) - =sql: 
+INSERT INTO hr_member (
+	     	u_id,         
+	     	name,         
+	     	passwd,       
+			u_level,      
+			login,        
+			recommend,    
+			email,        
+			reg_dt  	  
+	) VALUES (            
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     ?,               
+	     SYSDATE          
+	)                     
+
+[2022-06-13 12:04:48.397] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:208) - ==============================
+[2022-06-13 12:04:48.398] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: p770000
+[2022-06-13 12:04:48.398] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 박훈0000
+[2022-06-13 12:04:48.398] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 4321
+[2022-06-13 12:04:48.398] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 3
+[2022-06-13 12:04:48.398] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 52
+[2022-06-13 12:04:48.398] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: 31
+[2022-06-13 12:04:48.398] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:213) - =Object param: qkrgns0514@naver.com
+[2022-06-13 12:04:48.454] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:217) - =flag: 1
+[2022-06-13 12:04:48.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:158) - ==============================
+[2022-06-13 12:04:48.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:159) - =param: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@6d026701]
+[2022-06-13 12:04:48.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:160) - =sql: 
+SELECT COUNT(*) AS cnt 	
+FROM hr_member         	
+WHERE u_id LIKE ? || '%'	
+
+[2022-06-13 12:04:48.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:161) - ==============================
+[2022-06-13 12:04:48.454] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:163) - =Object param:p77
+[2022-06-13 12:04:48.495] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:166) - ==============================
+[2022-06-13 12:04:48.496] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:167) - =count: 5
+[2022-06-13 12:04:48.496] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:168) - ==============================
+[2022-06-13 12:04:48.540] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:132) - ==============================
+[2022-06-13 12:04:48.540] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:133) - =pram: 
+UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@6d026701]
+[2022-06-13 12:04:48.540] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:134) - =sql: 
+SELECT   u_id,			
+			name,           
+			passwd,         
+			u_level,        
+			login,          
+			recommend,      
+			email,          
+			TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+FROM hr_member 		    
+WHERE u_id LIKE ? || '%' 
+ORDER BY u_id  		    
+
+[2022-06-13 12:04:48.540] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:135) - ==============================
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:142) - vo: UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=49, recommend=0, email=qkrgns0514@naver.com, regDt=2022-06-13 12:04:47, toString()=com.pcwk.ehr.user.domain.UserVO@1b11ef33]
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:142) - vo: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 12:04:47, toString()=com.pcwk.ehr.user.domain.UserVO@476aac9]
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:142) - vo: UserVO [uId=p7700, name=박훈00, passwd=4321, level=SILVER, login=51, recommend=29, email=qkrgns0514@naver.com, regDt=2022-06-13 12:04:47, toString()=com.pcwk.ehr.user.domain.UserVO@6cea706c]
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:142) - vo: UserVO [uId=p77000, name=박훈000, passwd=4321, level=SILVER, login=51, recommend=30, email=qkrgns0514@naver.com, regDt=2022-06-13 12:04:47, toString()=com.pcwk.ehr.user.domain.UserVO@3bd7f8dc]
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.getAll(UserDaoImpl.java:142) - vo: UserVO [uId=p770000, name=박훈0000, passwd=4321, level=GOLD, login=52, recommend=31, email=qkrgns0514@naver.com, regDt=2022-06-13 12:04:47, toString()=com.pcwk.ehr.user.domain.UserVO@2f2bf0e2]
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:99) - ==============================
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:100) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 12:04:47, toString()=com.pcwk.ehr.user.domain.UserVO@476aac9]
+[2022-06-13 12:04:48.549] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:101) - =sql: 
+UPDATE hr_member      		
+SET 	name 		= 	?,      
+		passwd 		= 	?,      
+		u_level 	= 	?,     	
+		login 		= 	?,      
+		recommend 	= 	?,   	
+		email 		= 	?,      
+		reg_dt 		= 	SYSDATE 
+WHERE u_id 		= 	?  		
+
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:102) - ==============================
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:108) - =Object param: 박훈0
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:108) - =Object param: 4321
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:108) - =Object param: 2
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:108) - =Object param: 50
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:108) - =Object param: 10
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:108) - =Object param: qkrgns0514@naver.com
+[2022-06-13 12:04:48.550] DEBUG UserDaoImpl.doUpdate(UserDaoImpl.java:108) - =Object param: p770
+[2022-06-13 12:04:48.553] DEBUG DummyMailSender.send(DummyMailSender.java:15) - ***************************************
+[2022-06-13 12:04:48.553] DEBUG DummyMailSender.send(DummyMailSender.java:16) - **개발에서는 메일이 발송되지 않습니다!!!**
+[2022-06-13 12:04:48.553] DEBUG DummyMailSender.send(DummyMailSender.java:17) - ***************************************
+[2022-06-13 12:04:48.553] DEBUG TestUserService.upgradeLevel(TestUserService.java:40) - ================================
+[2022-06-13 12:04:48.553] DEBUG TestUserService.upgradeLevel(TestUserService.java:41) - =upgradeLevel=
+[2022-06-13 12:04:48.553] DEBUG TestUserService.upgradeLevel(TestUserService.java:42) - ================================
+[2022-06-13 12:04:48.553] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:17) - ================================
+[2022-06-13 12:04:48.553] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:18) - =TestUserServiceException=TestUserServiceExceptionp77000
+[2022-06-13 12:04:48.554] DEBUG TestUserServiceException.<init>(TestUserServiceException.java:19) - ================================
+[2022-06-13 12:04:48.554] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:91) - =====================
+[2022-06-13 12:04:48.554] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:92) - =rollback=
+[2022-06-13 12:04:48.554] DEBUG UserServiceImpl.upgradeLevels(UserServiceImpl.java:93) - =====================
+[2022-06-13 12:04:48.558] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:145) - =========================
+[2022-06-13 12:04:48.558] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:146) - =allOrNothing Exception: TestUserServiceExceptionp77000
+[2022-06-13 12:04:48.558] DEBUG JunitUserServiceTest.allOrNothing(JunitUserServiceTest.java:147) - =========================
+[2022-06-13 12:04:48.558] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:264) - ==============================
+[2022-06-13 12:04:48.558] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:265) - =param: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=com.pcwk.ehr.user.domain.UserVO@485a3466]
+[2022-06-13 12:04:48.558] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:266) - =sql: 
+SELECT u_id,       
+	      name,       
+		  passwd,     
+		  u_level,    
+		  login,      
+		  recommend,  
+		  email,      
+		  TO_CHAR(reg_dt, 'yyyy-mm-dd hh24:mi:ss') AS reg_dt  
+	FROM              
+	     hr_member    
+	WHERE u_id = ?    
+
+[2022-06-13 12:04:48.558] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:267) - ==============================
+[2022-06-13 12:04:48.558] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:270) - =Object param: p770
+[2022-06-13 12:04:48.621] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:279) - ==============================
+[2022-06-13 12:04:48.621] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:280) - =outVO: UserVO [uId=p770, name=박훈0, passwd=4321, level=BASIC, login=50, recommend=10, email=qkrgns0514@naver.com, regDt=2022-06-13 12:04:47, toString()=com.pcwk.ehr.user.domain.UserVO@363f6148]
+[2022-06-13 12:04:48.622] DEBUG UserDaoImpl.doSelectOne(UserDaoImpl.java:281) - ==============================

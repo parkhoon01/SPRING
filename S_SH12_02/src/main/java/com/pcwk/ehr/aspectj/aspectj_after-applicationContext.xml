@@ -31,7 +31,6 @@
     <aop:config>
         <aop:aspect ref="loggingAop">            
             <aop:after method="logging" pointcut="execution(* com.pcwk.ehr.aspectj..*Impl.do*(..))"/>
-            
         </aop:aspect>
     
     </aop:config>
