@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.ehr.user">
+    <!-- paging -->
+    <select id="doRetrieve" resultType="UserVO">
+        <![CDATA[
+        SELECT    A.*, B.*
+		FROM(
+		     SELECT    tt1.rnum AS num,
+		               tt1.u_id AS "uId",
+		               tt1.name,
+		               tt1.passwd,
+		               tt1.u_level AS intLevel,
+		               tt1.recommend,
+		               tt1.email,
+		               -- reg_dt가 금일이면 HH24:MI 아니면 yyyy-mm-dd
+		               DECODE(TO_CHAR(SYSDATE, 'yyyymmdd'),TO_CHAR(tt1.reg_dt, 'yyyymmdd'),
+		                      TO_CHAR(tt1.reg_dt, 'HH24:MI'),
+		                      TO_CHAR(tt1.reg_dt, 'yyyy-mm-dd')) regDt
+		     FROM(
+		          SELECT    ROWNUM AS RNUM, t1.*
+		          FROM(
+		               SELECT *
+		               FROM hr_member
+		               --검색조건
+		               ORDER BY reg_dt DESC
+		          )t1
+		          WHERE ROWNUM <= 10
+		     )tt1
+		     WHERE rnum >= 1
+		)A
+		CROSS JOIN
+		(
+		     SELECT COUNT(*) AS totalCnt
+		     FROM hr_member
+		     -- 검색조건
+		)B
+		]]>
+    </select>
+    
+    <!-- doUpdate: namespace + id = com.pcwk.ehr.user.doUpdate -->
+    <update id="doUpdate" parameterType="UserVO">
+         UPDATE hr_member       
+			 SET name      = #{name},     
+			     passwd    = #{passwd},     
+			     u_level   = #{intLevel},     
+			     login     = #{login},     
+			     recommend = #{recommend},     
+			     email     = #{email},     
+			     reg_dt    = SYSDATE
+		 WHERE   u_id = #{uId}         
+    </update>
+    
+    <!-- deleteAll: namespace + id = com.pcwk.ehr.user.deleteAll -->
+    <delete id="deleteAll">
+        DELETE FROM hr_member
+    </delete>
+    
+    <!-- getAll: namespace + id = com.pcwk.ehr.user.getAll  -->
+    <select id="getAll" parameterType="UserVO" resultType="UserVO">
+         SELECT u_id AS "uId",                           
+		        name,                         
+		        passwd,               
+		        u_level AS intLevel,                         
+		        login,                      
+		        recommend,                       
+		        email,                        
+		        TO_CHAR(reg_dt,'yyyy-mm-dd hh24:mi:ss') AS regDt   
+		 FROM hr_member                                   
+		 WHERE u_id LIKE #{uId} ||'%'               
+		 ORDER BY u_id
+    </select>
+    
+    <!-- 총 건수 조회: namespace + id = com.pcwk.ehr.user.getCount -->
+    <select id="getCount" parameterType="UserVO" resultType="int">
+         SELECT COUNT(*) AS cnt   
+		 FROM  hr_member          
+		 WHERE u_id LIKE #{uId}  ||'%'
+    </select>
+
+    <!-- 단건 조회: namespace + id = com.pcwk.ehr.user.doSelectOne -->
+    <resultMap type="UserVO" id="userResultMap">
+        <id     property="uId"          column="u_id"/>
+        <result property="name"         column="name"/>
+        <result property="passwd"       column="passwd"/>
+        <result property="intLevel"     column="u_level"/>
+        <result property="login"        column="login"/>
+        <result property="recommend"    column="recommend"/>
+        <result property="email"        column="email"/>
+        <result property="regDt"        column="reg_dt"/>
+    </resultMap>
+    
+    <select id="doSelectOne" parameterType="UserVO" resultMap="userResultMap">
+        <![CDATA[ 
+         SELECT u_id,                                    
+		        name,                                    
+		        passwd,                                  
+		        u_level,                                
+		        login,                                  
+		        recommend,                              
+		        email,                                  
+		        TO_CHAR(reg_dt,'yyyy-mm-dd hh24:mi:ss') AS reg_dt
+         FROM   hr_member                                    
+         WHERE  u_id = #{uId}  
+         ]]>                                   
+    </select>
+
+    <!-- 단건 삭제: namespace + id = com.pcwk.ehr.user.doDelete -->
+    <delete id="doDelete" parameterType="UserVO">
+         DELETE FROM hr_member 
+         WHERE u_id = #{uId}        
+    </delete>
+    
+    <!-- 단건 등록: namespace + id = com.pcwk.ehr.user.doInsert -->
+    <insert id="doInsert" parameterType="UserVO">
+         INSERT INTO hr_member (
+			         u_id,          
+			         name,          
+			         passwd,        
+			         u_level,       
+			         login,        
+			         recommend,    
+			         email,        
+			         reg_dt        
+		 ) VALUES (             
+		     #{uId},                 
+		     #{name},                 
+		     #{passwd},                 
+		     #{intLevel},                 
+		     #{login},                 
+		     #{recommend},                 
+		     #{email},                 
+		     SYSDATE            
+		 )                      
+        
+    </insert>
+    
+
+</mapper>

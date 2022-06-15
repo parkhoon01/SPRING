@@ -1,0 +1,55 @@
+@charset "UTF-8";
+  /* 모든 html margin,padding을 0으로 초기화 */
+  * {
+    margin: 0;
+    padding: 0;
+  } 
+  
+  /* web 폰트 */
+  @font-face {
+     font-family: 'NG';
+     src: url('/studyhtml5/font/NanumGothic.woff') format('woff');
+  }
+  
+  @font-face {
+     font-family: 'NGB';
+     src: url('/studyhtml5/font/NanumGothicBold.woff') format('woff');
+  }  
+  
+  
+  @font-face {
+     font-family: 'NGEB';
+     src: url('/studyhtml5/font/NanumGothicExtraBold.woff') format('woff');
+  } 
+  
+  html {
+    font-family: NG;
+  }
+  
+  table{
+     width: 600px;
+     border-collapse: collapse; 
+  }
+  
+  td,th {
+     border-bottom: 1px solid lightgrey;
+     padding: 5px;
+  }
+  
+  th {
+     background: gray;
+     color: #fff;
+  }
+  
+  
+
+input[type="text"]
+input[type="password"]{
+  height: auto;	
+  vertical-align: middle;
+}
+select{
+  height: 20px;
+  vertical-align: middle;
+}
+  

@@ -1,0 +1,239 @@
+<!DOCTYPE html>   
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="/studyhtml5/favicon.ico">
+
+
+<!--reset 스타일 시트 -->
+<!-- link rel="stylesheet" type="text/css" href="<%=contPath %>/asset/css/reset.css" -->
+
+<!-- bootstrap CDN -->
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet"  type="text/css" href="<%=contPath %>/asset/css/jquery-ui.css">
+
+
+<!--스타일 시트 -->
+<style type="text/css">
+</style>
+<title>Insert title here</title>
+<!-- jquery -->
+<script type="text/javascript" src="<%=contPath %>/asset/js/jquery-1.12.4.js"></script>
+<!-- jQuery UI -->
+<script type="text/javascript" src="<%=contPath %>/asset/js/jquery-ui.js"></script>
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<!--스타일 시트 -->
+<style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        li, p {
+            margin: 0;
+        }
+
+        header{
+            width: 100%;
+            height: 20%;
+        }
+
+        div{
+            display: block;
+        }
+
+        .nav-ul li{
+            display: inline-block;
+            padding: 12px 12px;
+        }
+
+        .nav-ul li a{
+            text-decoration: none;
+        }
+
+        li:hover{
+            background-color: lightgray;
+        }
+
+        .menu1 ul{
+            list-style: none;
+            text-align: right;
+        }
+
+        #slc{
+            border: 2px solid red;
+            border-radius: 100%;
+        }
+
+        /* <!-- article--> */
+        article{
+            max-width: 1200px;
+            width: 100%;
+            min-height: 60rem;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        /* <!-- container--> */
+        .container{
+            margin: 0 auto;
+        }
+
+        /* <!-- meeting--> */
+        .meeting{
+            display: flex;
+            grid-gap: 35px;
+            gap: 35px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin-bottom: 10rem;
+        }
+
+        .meeting ul{
+            margin: 0;
+        }
+        
+        /* .meeting_box1 */
+        .meeting_box1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 8px 20px 8px;
+            width: 340px;
+            height: 450px;
+            background: #fff;
+            border: 2px solid #d1d1d1;
+            border-radius: 30px;
+            position: relative;
+            cursor: pointer;
+            transition: .2s ease-in;
+        }
+
+        .meeting_box1 p{
+            font-size: 16px;
+            border-bottom: 2px solid black;
+            padding-bottom: 4px;
+            color: #999494;
+            
+        }
+
+        .meeting_box1 ul{
+            list-style-type: none;
+        }
+
+        .meeting_box1 li{
+            font-size: 18px;
+        } 
+        
+        .meeting_box1 h2{
+        }
+        
+        .card{
+            padding: 32px 0;
+            
+        }
+
+        #notice{
+            border: 1px solid black;
+        }
+        
+        footer{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: rgb(66, 62, 62);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="menu1">
+            <ul> 
+                <li>로그인</li>
+            </ul>
+        </div>
+        
+        <!-- <nav>
+            <ul>
+                <li id="slc"><a href="02.html">모임 찾기</a></li>
+                <li><a href="03.html">여행 후기</a></li>
+                <li><a href="04.html">여행지 추천</a></li>
+                <li><a href="05.html">캠핑용품 추천/리뷰</a></li>
+                <li><a href="06.html">공지사항</a></li>
+            </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Fire</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto nav-ul">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">모임찾기 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">여행 후기</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    여행지 추천
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">캠핑용품 추천/리뷰</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">공지사항</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <article>
+        <div class="container">
+            <ul class="meeting">
+                <li class="meeting_box1">
+                    
+                    <p class="card">시작 예정일 | 2022.06.14</p>
+                    <div class="card">
+                        <h2 class="card">강릉 여행!!</h2>
+                            <ul>
+                                <li class="card">#1박2일#먹방여행</li>
+                            </ul>
+                    </div>
+                </li>
+                <li class="meeting_box1"></li>
+                <li class="meeting_box1"></li>
+                <li class="meeting_box1"></li>
+                <li class="meeting_box1"></li>
+                <li class="meeting_box1"></li>
+            </ul>
+        </div>
+        <aside>
+            
+        </aside>
+    </article>
+    <footer>
+        <p>Copyright @ 2022 FIRE</p>
+    </footer>
+</body>
+</html>
