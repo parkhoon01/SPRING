@@ -172,7 +172,7 @@ public class UserDaoImpl implements UserDao {
 
 	@Override
 	public List<UserVO> doRetrieve(DTO dto) throws SQLException {
-		SearchVO inVO = (SearchVO) dto;
+		SearchVO inVO =  (SearchVO) dto;
 		String statement = NAMESPACE + ".doRetrieve";
 		
 		LOG.debug("==============================");	

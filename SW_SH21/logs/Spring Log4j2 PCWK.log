@@ -1,0 +1,336 @@
+[2022-06-23 15:29:51.655] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[2022-06-23 15:29:51.663] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[2022-06-23 15:29:51.664] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.664] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-23 15:29:51.664] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42c28305]
+[2022-06-23 15:29:51.664] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.664] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.665] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-23 15:29:51.665] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.665] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ==============================
+[2022-06-23 15:29:51.665] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:87) - count=0
+[2022-06-23 15:29:51.665] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:88) - ==============================
+[2022-06-23 15:29:51.665] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:108) - ==============================
+[2022-06-23 15:29:51.665] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:109) - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-23 15:29:51.665] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:110) - statement:com.pcwk.ehr.user.doInsert
+[2022-06-23 15:29:51.665] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:111) - ==============================
+[2022-06-23 15:29:51.665] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-23 15:29:51.666] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3901f6af] was not registered for synchronization because synchronization is not active
+[2022-06-23 15:29:51.666] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-23 15:29:51.666] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.666] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.666] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.667] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.667] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-23 15:29:51.667] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES ( ?, ?, ?, ?, ?, ?, ?, SYSDATE )
+[2022-06-23 15:29:51.667] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-23 15:29:51.667] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(INSERT INTO hr_member ( 
+	         u_id,           
+	         name,           
+	         passwd,         
+	         u_level,        
+	         login,         
+	         recommend,     
+	         email,         
+	         reg_dt         
+	 ) VALUES (              
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     ?,                  
+	     SYSDATE             
+	 )) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@602ae7b6
+[2022-06-23 15:29:51.668] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[2022-06-23 15:29:51.668] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(2, "박훈") returned 
+[2022-06-23 15:29:51.668] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(3, "4321") returned 
+[2022-06-23 15:29:51.668] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(4, 1) returned 
+[2022-06-23 15:29:51.668] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(5, 1) returned 
+[2022-06-23 15:29:51.669] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(6, 0) returned 
+[2022-06-23 15:29:51.669] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(7, "qkrgns0514@naver.com") returned 
+[2022-06-23 15:29:51.669] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p77(String), 박훈(String), 4321(String), 1(Integer), 1(Integer), 0(Integer), qkrgns0514@naver.com(String)
+[2022-06-23 15:29:51.672] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES 
+( 'p77', '박훈', '4321', 1, 1, 0, 'qkrgns0514@naver.com', SYSDATE )  {executed in 3 ms}
+[2022-06-23 15:29:51.673] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[2022-06-23 15:29:51.673] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 1
+[2022-06-23 15:29:51.673] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==    Updates: 1
+[2022-06-23 15:29:51.673] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-23 15:29:51.673] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3901f6af]
+[2022-06-23 15:29:51.674] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.674] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.674] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-23 15:29:51.674] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.674] DEBUG UserDaoImpl.doInsert(UserDaoImpl.java:114) - flag:1
+[2022-06-23 15:29:51.674] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:80) - ==============================
+[2022-06-23 15:29:51.674] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:81) - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-23 15:29:51.674] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:82) - statement:com.pcwk.ehr.user.getCount
+[2022-06-23 15:29:51.674] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:83) - ==============================
+[2022-06-23 15:29:51.674] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-23 15:29:51.675] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10cd6753] was not registered for synchronization because synchronization is not active
+[2022-06-23 15:29:51.675] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-23 15:29:51.675] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.675] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.675] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.675] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.675] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-23 15:29:51.676] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE ? ||'%'
+[2022-06-23 15:29:51.676] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-23 15:29:51.676] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) AS cnt    
+	FROM  hr_member           
+	WHERE u_id LIKE ? ||'%') returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@71ad3d8a
+[2022-06-23 15:29:51.676] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[2022-06-23 15:29:51.676] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p77(String)
+[2022-06-23 15:29:51.677] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE 'p77' ||'%'  {executed in 1 ms}
+[2022-06-23 15:29:51.677] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[2022-06-23 15:29:51.677] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[2022-06-23 15:29:51.678] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@47af099e
+[2022-06-23 15:29:51.678] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@700f518a
+[2022-06-23 15:29:51.678] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[2022-06-23 15:29:51.678] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-23 15:29:51.678] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[2022-06-23 15:29:51.679] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 1
+[2022-06-23 15:29:51.679] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-23 15:29:51.679] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+[2022-06-23 15:29:51.679] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[2022-06-23 15:29:51.679] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[2022-06-23 15:29:51.680] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[2022-06-23 15:29:51.680] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.680] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-23 15:29:51.680] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10cd6753]
+[2022-06-23 15:29:51.680] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.680] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.680] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-23 15:29:51.681] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.681] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:86) - ==============================
+[2022-06-23 15:29:51.681] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:87) - count=1
+[2022-06-23 15:29:51.681] DEBUG UserDaoImpl.getCount(UserDaoImpl.java:88) - ==============================
+[2022-06-23 15:29:51.681] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:212) - ==============================
+[2022-06-23 15:29:51.681] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:213) - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-23 15:29:51.681] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:214) - statement:com.pcwk.ehr.user.passCheck
+[2022-06-23 15:29:51.681] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:215) - ==============================
+[2022-06-23 15:29:51.681] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-23 15:29:51.681] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13da7ab0] was not registered for synchronization because synchronization is not active
+[2022-06-23 15:29:51.681] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-23 15:29:51.682] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.682] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.682] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.682] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.682] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-23 15:29:51.682] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id = ? AND passwd = ?
+[2022-06-23 15:29:51.683] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-23 15:29:51.683] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) AS cnt
+	FROM hr_member
+	WHERE u_id = ?
+	AND passwd = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2c8662ac
+[2022-06-23 15:29:51.683] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[2022-06-23 15:29:51.683] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(2, "4321") returned 
+[2022-06-23 15:29:51.683] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p77(String), 4321(String)
+[2022-06-23 15:29:51.685] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id = 'p77' AND passwd = '4321'  {executed in 2 ms}
+[2022-06-23 15:29:51.685] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[2022-06-23 15:29:51.685] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[2022-06-23 15:29:51.685] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@260ff5b7
+[2022-06-23 15:29:51.686] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@3724b43e
+[2022-06-23 15:29:51.686] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[2022-06-23 15:29:51.686] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-23 15:29:51.686] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[2022-06-23 15:29:51.686] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 1
+[2022-06-23 15:29:51.687] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-23 15:29:51.687] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+[2022-06-23 15:29:51.687] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[2022-06-23 15:29:51.687] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[2022-06-23 15:29:51.687] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[2022-06-23 15:29:51.687] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.688] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-23 15:29:51.688] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13da7ab0]
+[2022-06-23 15:29:51.688] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.688] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.689] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-23 15:29:51.689] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.689] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:217) - cnt:1
+[2022-06-23 15:29:51.689] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:212) - ==============================
+[2022-06-23 15:29:51.689] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:213) - param:UserVO [uId=p77, name=박훈, passwd=4321false, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[2022-06-23 15:29:51.689] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:214) - statement:com.pcwk.ehr.user.passCheck
+[2022-06-23 15:29:51.689] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:215) - ==============================
+[2022-06-23 15:29:51.689] DEBUG Logger.debug(Logger.java:49) - Creating a new SqlSession
+[2022-06-23 15:29:51.689] DEBUG Logger.debug(Logger.java:49) - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68e7c8c3] was not registered for synchronization because synchronization is not active
+[2022-06-23 15:29:51.689] DEBUG DataSourceUtils.doGetConnection(DataSourceUtils.java:116) - Fetching JDBC Connection from DataSource
+[2022-06-23 15:29:51.689] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.690] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.690] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.690] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.690] DEBUG Logger.debug(Logger.java:49) - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[2022-06-23 15:29:51.690] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==>  Preparing: SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id = ? AND passwd = ?
+[2022-06-23 15:29:51.691] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[2022-06-23 15:29:51.691] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) AS cnt
+	FROM hr_member
+	WHERE u_id = ?
+	AND passwd = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@319c3a25
+[2022-06-23 15:29:51.691] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[2022-06-23 15:29:51.691] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(2, "4321false") returned 
+[2022-06-23 15:29:51.691] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - ==> Parameters: p77(String), 4321false(String)
+[2022-06-23 15:29:51.693] INFO  Log4j2SpyLogDelegator.sqlTimingOccurred(Log4j2SpyLogDelegator.java:243) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id = 'p77' AND passwd = '4321false'  {executed in 2 ms}
+[2022-06-23 15:29:51.693] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[2022-06-23 15:29:51.693] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[2022-06-23 15:29:51.693] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@238bfd6c
+[2022-06-23 15:29:51.694] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@ef1695a
+[2022-06-23 15:29:51.694] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[2022-06-23 15:29:51.694] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-23 15:29:51.694] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[2022-06-23 15:29:51.694] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 0
+[2022-06-23 15:29:51.695] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[2022-06-23 15:29:51.695] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[2022-06-23 15:29:51.695] INFO  Log4j2SpyLogDelegator.resultSetCollected(Log4j2SpyLogDelegator.java:390) - 
+|----|
+|cnt |
+|----|
+|0   |
+|----|
+
+[2022-06-23 15:29:51.695] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[2022-06-23 15:29:51.695] DEBUG BaseJdbcLogger.debug(BaseJdbcLogger.java:137) - <==      Total: 1
+[2022-06-23 15:29:51.696] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[2022-06-23 15:29:51.696] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@474fae39
+[2022-06-23 15:29:51.696] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[2022-06-23 15:29:51.696] DEBUG Logger.debug(Logger.java:49) - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68e7c8c3]
+[2022-06-23 15:29:51.696] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[2022-06-23 15:29:51.696] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.697] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[2022-06-23 15:29:51.697] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[2022-06-23 15:29:51.697] DEBUG UserDaoImpl.passCheck(UserDaoImpl.java:217) - cnt:0
+[2022-06-23 15:29:51.697] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [2089016471] from cache with key [[MergedContextConfiguration@192c3f1e testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[2022-06-23 15:29:51.697] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@58065f0c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+[2022-06-23 15:29:51.697] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:279) - ====================
+[2022-06-23 15:29:51.697] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:280) - =9.tearDown()=
+[2022-06-23 15:29:51.697] DEBUG JunitUserDaoTest.tearDown(JunitUserDaoTest.java:281) - ====================
+[2022-06-23 15:29:51.698] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [2089016471] from cache with key [[MergedContextConfiguration@192c3f1e testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[2022-06-23 15:29:51.698] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@58065f0c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+[2022-06-23 15:29:51.698] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestMethod(AbstractDirtiesContextTestExecutionListener.java:108) - After test method: context [DefaultTestContext@1e178745 testClass = JunitUserDaoTest, testInstance = com.pcwk.ehr.JunitUserDaoTest@25cd49a4, testMethod = passCheck@JunitUserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@192c3f1e testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[2022-06-23 15:29:51.699] DEBUG DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:137) - Retrieved ApplicationContext [2089016471] from cache with key [[MergedContextConfiguration@192c3f1e testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[2022-06-23 15:29:51.699] DEBUG DefaultContextCache.logStatistics(DefaultContextCache.java:290) - Spring test ApplicationContext cache statistics: [DefaultContextCache@58065f0c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+[2022-06-23 15:29:51.699] DEBUG AbstractDirtiesContextTestExecutionListener.beforeOrAfterTestClass(AbstractDirtiesContextTestExecutionListener.java:143) - After test class: context [DefaultTestContext@1e178745 testClass = JunitUserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@192c3f1e testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+[2022-06-23 15:29:51.700] DEBUG AbstractApplicationContext.doClose(AbstractApplicationContext.java:1049) - Closing org.springframework.context.support.GenericApplicationContext@7c83dc97, started on Thu Jun 23 15:29:50 KST 2022
+[2022-06-23 15:29:51.702] INFO  Log4j2SpyLogDelegator.connectionModified(Log4j2SpyLogDelegator.java:365) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+2. Connection closed. {executed in 0ms} 
+open connections:  none
+[2022-06-23 15:29:51.703] INFO  Log4j2SpyLogDelegator.methodReturned(Log4j2SpyLogDelegator.java:197) -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+2. Connection.close() returned 

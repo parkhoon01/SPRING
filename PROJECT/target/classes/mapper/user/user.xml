@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.pcwk.ehr.user">
+<mapper namespace="com.pcwk.fire.user">
+    
     <!-- 10: u_id, 20: name, 30: email -->
     <sql id="searchCondition">
         <where>
@@ -23,11 +24,11 @@
         SELECT    A.*, B.*
 		FROM(
 		     SELECT    tt1.rnum AS num,
-		               tt1.id AS "uId",
+		               tt1.id,
+		               tt1.n_name,
+		               tt1.password,
 		               tt1.name,
-		               tt1.passwd,
-		               tt1.u_level AS intLevel,
-		               tt1.recommend,
+		               tt1.birth,
 		               tt1.email,
 		               -- reg_dt가 금일이면 HH24:MI 아니면 yyyy-mm-dd
 		               DECODE(TO_CHAR(SYSDATE, 'yyyymmdd'),TO_CHAR(tt1.reg_dt, 'yyyymmdd'),
@@ -37,7 +38,7 @@
 		          SELECT    ROWNUM AS RNUM, t1.*
 		          FROM(
 		               SELECT *
-		               FROM hr_member
+		               FROM member
 		               --검색조건
 		               <include refid="searchCondition"></include>
 		
@@ -50,7 +51,7 @@
 		CROSS JOIN
 		(
 		     SELECT COUNT(*) AS totalCnt
-		     FROM hr_member
+		     FROM member
 		     -- 검색조건
 		     <include refid="searchCondition"></include>
 		)B
@@ -59,19 +60,19 @@
     <!-- doUpdate: namespace + id = com.pcwk.ehr.user.doUpdate -->
     <update id="doUpdate" parameterType="UserVO">
          UPDATE hr_member       
-			 SET name      = #{name},     
-			     passwd    = #{passwd},     
-			     u_level   = #{intLevel},     
-			     login     = #{login},     
-			     recommend = #{recommend},     
-			     email     = #{email},     
-			     reg_dt    = SYSDATE
+		 SET name      = #{name},     
+		     password    = #{password},     
+		     u_level   = #{intLevel},     
+		     login     = #{login},     
+		     recommend = #{recommend},     
+		     email     = #{email},     
+		     reg_dt    = SYSDATE
 		 WHERE   id = #{uId}         
     </update>
     
     <!-- deleteAll: namespace + id = com.pcwk.ehr.user.deleteAll -->
     <delete id="deleteAll">
-        DELETE FROM hr_member
+        DELETE FROM member
     </delete>
     
     <!-- getAll: namespace + id = com.pcwk.ehr.user.getAll  -->
@@ -99,21 +100,21 @@
 <!--     단건 조회: namespace + id = com.pcwk.fire.user.doSelectOne -->
     <resultMap type="UserVO" id="userResultMap">
         <id     property="id"       column="id"/>
-        <result property="nName"    column="n_name  "/>
+        <result property="nName"    column="n_name"/>
         <result property="password" column="password"/>
-        <result property="pNum"     column="p_num   "/>
-        <result property="name"     column="name    "/>
-        <result property="email"    column="email   "/>
-        <result property="birth"    column="birth   "/>
-        <result property="sex"      column="sex     "/>
-        <result property="tel"      column="tel     "/>
-        <result property="adminP"   column="admin_p "/>
-        <result property="score"    column="score   "/>
-        <result property="mList"    column="m_list  "/>
-        <result property="regDt"    column="reg_dt  "/>
-        <result property="regId"    column="reg_id  "/>
-        <result property="modDt"    column="mod_dt  "/>
-        <result property="modId"    column="mod_id   "/>
+        <result property="pNum"     column="p_num"/>
+        <result property="name"     column="name"/>
+        <result property="email"    column="email"/>
+        <result property="birth"    column="birth"/>
+        <result property="sex"      column="sex"/>
+        <result property="tel"      column="tel"/>
+        <result property="adminP"   column="admin_p"/>
+        <result property="score"    column="score"/>
+        <result property="mList"    column="m_list"/>
+        <result property="regDt"    column="reg_dt"/>
+        <result property="regId"    column="reg_id"/>
+        <result property="modDt"    column="mod_dt"/>
+        <result property="modId"    column="mod_id"/>
     </resultMap>                              
     
     <select id="doSelectOne" parameterType="UserVO" resultMap="userResultMap">

@@ -1,0 +1,11 @@
+let htmlData = "";
+htmlData += "<tr>                                                                    	";
+htmlData += "	 <td class='text-center col-sm-1 col-md-1 col-lg-1'>value.num	</td>  	";
+htmlData += "	 <td class='text-left   col-sm-2 col-md-2 col-lg-2'>value.uId	</td>  	";
+htmlData += "	 <td class='text-left   col-sm-2 col-md-2 col-lg-2'>value.name	</td> 	";
+htmlData += "	 <td class='text-center col-sm-2 col-md-2 col-lg-2'>value.level	</td>	";
+htmlData += "	 <td class='text-left   col-sm-3 col-md-3 col-lg-3'>value.email	</td>	";
+htmlData += "	 <td class='text-center col-sm-2 col-md-2 col-lg-2'>value.regDt	</td>	";
+htmlData += "</tr>                                                                   	";
+
+<tr><td colspan='99' class='text-center'>No data found!</td></tr>

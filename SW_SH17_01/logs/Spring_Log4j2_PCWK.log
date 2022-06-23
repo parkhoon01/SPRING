@@ -17458,3 +17458,1256 @@ open connections:  2 (1)
 [DEBUG], 2022-06-17 12:02:36 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2adddc06 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
 [DEBUG], 2022-06-17 12:02:36 AbstractDirtiesContextTestExecutionListener:143 - After test class: context [DefaultTestContext@7a675056 testClass = JUnitUserControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@d21a74c testClass = JUnitUserControllerTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false, 'org.springframework.test.context.support.DependencyInjectionTestExecutionListener.reinjectDependencies' -> true]], class annotated with @DirtiesContext [false] with mode [null].
 [DEBUG], 2022-06-17 12:02:36 GenericWebApplicationContext:1049 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5f683daf, started on Fri Jun 17 12:02:34 KST 2022
+[DEBUG], 2022-06-17 17:19:18 SpringJUnit4ClassRunner:139 - SpringJUnit4ClassRunner constructor called with [class com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 BootstrapUtils:108 - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[DEBUG], 2022-06-17 17:19:18 BootstrapUtils:88 - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[DEBUG], 2022-06-17 17:19:18 BootstrapUtils:143 - Instantiating TestContextBootstrapper for test class [com.pcwk.ehr.JunitUserDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+[DEBUG], 2022-06-17 17:19:18 AbstractDelegatingSmartContextLoader:263 - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@1bd4fdd declaringClass = 'com.pcwk.ehr.JunitUserDaoTest', classes = '{}', locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+[DEBUG], 2022-06-17 17:19:18 ActiveProfilesUtils:79 - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 DefaultTestContextBootstrapper:124 - @TestExecutionListeners is not present for class [com.pcwk.ehr.JunitUserDaoTest]: using defaults.
+[INFO], 2022-06-17 17:19:18 DefaultTestContextBootstrapper:245 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[INFO], 2022-06-17 17:19:18 DefaultTestContextBootstrapper:174 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4e50c791, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7530ad9c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@58a9760d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@71e9ddb4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@394df057, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4961f6af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5aebe890, org.springframework.test.context.event.EventPublishingTestExecutionListener@65d09a04]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 AbstractDirtiesContextTestExecutionListener:143 - Before test class: context [DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:18 DependencyInjectionTestExecutionListener:81 - Performing dependency injection for test context [[DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = com.pcwk.ehr.JunitUserDaoTest@313b2ea6, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+[DEBUG], 2022-06-17 17:19:18 AbstractDelegatingSmartContextLoader:273 - Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+[DEBUG], 2022-06-17 17:19:18 AbstractGenericContextLoader:107 - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[DEBUG], 2022-06-17 17:19:18 StandardEnvironment:302 - Activating profiles []
+[DEBUG], 2022-06-17 17:19:18 XmlBeanDefinitionReader:393 - Loaded 11 bean definitions from URL [file:src/main/webapp/WEB-INF/spring/root-context.xml]
+[DEBUG], 2022-06-17 17:19:18 ClassPathBeanDefinitionScanner:435 - Identified candidate component class: file [C:\DCOM_220127\05_SPRING\workspace\SW_SH17_01\target\classes\com\pcwk\ehr\user\controller\UserController.class]
+[DEBUG], 2022-06-17 17:19:18 ClassPathBeanDefinitionScanner:435 - Identified candidate component class: file [C:\DCOM_220127\05_SPRING\workspace\SW_SH17_01\target\classes\com\pcwk\ehr\user\dao\UserDaoImpl.class]
+[DEBUG], 2022-06-17 17:19:18 ClassPathBeanDefinitionScanner:435 - Identified candidate component class: file [C:\DCOM_220127\05_SPRING\workspace\SW_SH17_01\target\classes\com\pcwk\ehr\user\service\UserServiceImpl.class]
+[DEBUG], 2022-06-17 17:19:18 XmlBeanDefinitionReader:393 - Loaded 33 bean definitions from URL [file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml]
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0'
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.driver' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.url' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.username' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.password' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.maxActive' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.maxIdle' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.maxWait' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.removeAbandoned' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 PropertySourcesPropertyResolver:115 - Found key 'jdbc.removeAbandonedTimeout' in PropertySource 'localProperties' with value of type String
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'sqlSessionTemplate'
+[DEBUG], 2022-06-17 17:19:18 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'sqlSessionFactoryBean'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'dataSource'
+[DEBUG], 2022-06-17 17:19:19 debug:372 - log4jdbc-logj2 properties initialization...
+[DEBUG], 2022-06-17 17:19:19 debug:372 - Using logger: null
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.debug.stack.prefix is not defined
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.sqltiming.warn.threshold is not defined
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.sqltiming.error.threshold is not defined
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.booleanastruefalse is not defined (using default value false)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.sql.maxlinelength is not defined (using default of 90)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.fulldebugstacktrace is not defined (using default value false)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.statement.warn is not defined (using default value false)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.sql.select is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.sql.insert is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.sql.update is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.sql.delete is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.sql.create is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.dump.sql.addsemicolon is not defined (using default value false)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.auto.load.popular.drivers is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.drivers is not defined
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.trim.sql is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.trim.sql.extrablanklines is not defined (using default value true)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - x log4jdbc.suppress.generated.keys.exception is not defined (using default value false)
+[DEBUG], 2022-06-17 17:19:19 debug:372 - log4jdbc-logj2 properties initialization done.
+[DEBUG], 2022-06-17 17:19:19 debug:372 - DriverSpy intialization...
+[DEBUG], 2022-06-17 17:19:19 debug:372 -   FOUND DRIVER oracle.jdbc.OracleDriver
+[DEBUG], 2022-06-17 17:19:19 debug:372 -   FOUND DRIVER oracle.jdbc.driver.OracleDriver
+[DEBUG], 2022-06-17 17:19:19 debug:372 - DriverSpy intialization done.
+[DEBUG], 2022-06-17 17:19:19 LogFactory:105 - Logging initialized using 'class org.apache.ibatis.logging.log4j2.Log4j2Impl' adapter.
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'dummyMailSender'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'mailSenderImpl'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'transactionManager'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'txAdvice'
+[DEBUG], 2022-06-17 17:19:19 NameMatchTransactionAttributeSource:102 - Adding transactional method [do*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly]
+[DEBUG], 2022-06-17 17:19:19 NameMatchTransactionAttributeSource:102 - Adding transactional method [up*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+[DEBUG], 2022-06-17 17:19:19 RequestMappingHandlerMapping:367 - 3 mappings in 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter'
+[DEBUG], 2022-06-17 17:19:19 RequestMappingHandlerAdapter:622 - ControllerAdvice beans: none
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+[DEBUG], 2022-06-17 17:19:19 RequestMappingHandlerAdapter:622 - ControllerAdvice beans: none
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+[DEBUG], 2022-06-17 17:19:19 ExceptionHandlerExceptionResolver:304 - ControllerAdvice beans: none
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+[DEBUG], 2022-06-17 17:19:19 Mappings:86 - 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' {}
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'localeResolver'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'themeResolver'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'viewNameTranslator'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'flashMapManager'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'mvcPathMatcher'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+[DEBUG], 2022-06-17 17:19:19 Mappings:177 - 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' {/resources/**=ResourceHttpRequestHandler [classpath [resources/]]}
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'UserController'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userService'
+[DEBUG], 2022-06-17 17:19:19 DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'userDao'
+[DEBUG], 2022-06-17 17:19:19 DefaultCacheAwareContextLoaderDelegate:126 - Storing ApplicationContext [1431467659] in cache under key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:19 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+[DEBUG], 2022-06-17 17:19:19 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:19 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+[DEBUG], 2022-06-17 17:19:19 AbstractDirtiesContextTestExecutionListener:108 - Before test method: context [DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = com.pcwk.ehr.JunitUserDaoTest@313b2ea6, testMethod = doRetrieve@JunitUserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG], 2022-06-17 17:19:19 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:19 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+[DEBUG], 2022-06-17 17:19:19 JunitUserDaoTest:47 - ====================
+[DEBUG], 2022-06-17 17:19:19 JunitUserDaoTest:48 - =0.setUp()=
+[DEBUG], 2022-06-17 17:19:19 JunitUserDaoTest:49 - ====================
+[DEBUG], 2022-06-17 17:19:19 JunitUserDaoTest:62 - context:org.springframework.context.support.GenericApplicationContext@5552768b, started on Fri Jun 17 17:19:18 KST 2022
+[DEBUG], 2022-06-17 17:19:19 JunitUserDaoTest:63 - dao:com.pcwk.ehr.user.dao.UserDaoImpl@4fe01803
+[DEBUG], 2022-06-17 17:19:19 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:19 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+[DEBUG], 2022-06-17 17:19:19 UserDaoImpl:187 - ==============================
+[DEBUG], 2022-06-17 17:19:19 UserDaoImpl:188 - param:SearchVO [pageSize=10, pageNum=1, searchDiv=, searcWord=, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:19 UserDaoImpl:189 - statement:com.pcwk.ehr.user.doRetrieve
+[DEBUG], 2022-06-17 17:19:19 UserDaoImpl:190 - ==============================
+[DEBUG], 2022-06-17 17:19:19 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:19 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@693e4d19] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:19 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:365 -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+1. Connection opened. {executed in 432ms} 
+open connections:  1 (1)
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+1. Connection.new Connection returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
+1. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.isClosed(DelegatingConnection.java:386)
+1. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+1. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+1. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:365 -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+1. Connection closed. {executed in 1ms} 
+open connections:  none
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+1. Connection.close() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:365 -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+2. Connection opened. {executed in 68ms} 
+open connections:  2 (1)
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+2. Connection.new Connection returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnectionFactory.initializeConnection(PoolableConnectionFactory.java:597)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 doRetrieve:137 - ==>  Preparing: SELECT A.*, B.* FROM( SELECT tt1.rnum AS num, tt1.u_id AS "uId", tt1.name, tt1.passwd, tt1.u_level AS intLevel, tt1.recommend, tt1.email, -- reg_dt가 금일이면 HH24:MI 아니면 yyyy-mm-dd DECODE(TO_CHAR(SYSDATE, 'yyyymmdd'),TO_CHAR(tt1.reg_dt, 'yyyymmdd'), TO_CHAR(tt1.reg_dt, 'HH24:MI'), TO_CHAR(tt1.reg_dt, 'yyyy-mm-dd')) regDt FROM( SELECT ROWNUM AS RNUM, t1.* FROM( SELECT * FROM hr_member --검색조건 ORDER BY reg_dt DESC )t1 WHERE ROWNUM <= ? * (? - 1) + ? )tt1 WHERE rnum >= (? * (? - 1) + 1) )A CROSS JOIN ( SELECT COUNT(*) AS totalCnt FROM hr_member -- 검색조건 )B
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT    A.*, B.*
+		FROM(
+		     SELECT    tt1.rnum AS num,
+		               tt1.u_id AS "uId",
+		               tt1.name,
+		               tt1.passwd,
+		               tt1.u_level AS intLevel,
+		               tt1.recommend,
+		               tt1.email,
+		               -- reg_dt가 금일이면 HH24:MI 아니면 yyyy-mm-dd
+		               DECODE(TO_CHAR(SYSDATE, 'yyyymmdd'),TO_CHAR(tt1.reg_dt, 'yyyymmdd'),
+		                      TO_CHAR(tt1.reg_dt, 'HH24:MI'),
+		                      TO_CHAR(tt1.reg_dt, 'yyyy-mm-dd')) regDt
+		     FROM(
+		          SELECT    ROWNUM AS RNUM, t1.*
+		          FROM(
+		               SELECT *
+		               FROM hr_member
+		               --검색조건
+		                
+          
+     
+		
+		               ORDER BY reg_dt DESC
+		          )t1
+		          WHERE ROWNUM   <= ? * (? - 1) + ? 
+		     )tt1
+		     WHERE rnum   >= (? * (? - 1) + 1) 
+		)A
+		CROSS JOIN
+		(
+		     SELECT COUNT(*) AS totalCnt
+		     FROM hr_member
+		     -- 검색조건
+		      
+          
+     
+		)B) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5a00eb1e
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(1, 10) returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(2, 1) returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(3, 10) returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(4, 10) returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(5, 1) returned 
+[DEBUG], 2022-06-17 17:19:20 doRetrieve:137 - ==> Parameters: 10(Integer), 1(Integer), 10(Integer), 10(Integer), 1(Integer)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT A.*, B.* FROM( SELECT tt1.rnum AS num, tt1.u_id AS "uId", tt1.name, tt1.passwd, tt1.u_level 
+AS intLevel, tt1.recommend, tt1.email, -- reg_dt가 금일이면 HH24:MI 아니면 yyyy-mm-dd DECODE(TO_CHAR(SYSDATE, 
+'yyyymmdd'),TO_CHAR(tt1.reg_dt, 'yyyymmdd'), TO_CHAR(tt1.reg_dt, 'HH24:MI'), TO_CHAR(tt1.reg_dt, 
+'yyyy-mm-dd')) regDt FROM( SELECT ROWNUM AS RNUM, t1.* FROM( SELECT * FROM hr_member --검색조건 
+ORDER BY reg_dt DESC )t1 WHERE ROWNUM <= 10 * (1 - 1) + 10 )tt1 WHERE rnum >= (10 * (1 - 1) 
++ 1) )A CROSS JOIN ( SELECT COUNT(*) AS totalCnt FROM hr_member -- 검색조건 )B  {executed in 38 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@154bd49b
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@3f92a84e
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@6c302a1d
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p23
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 이지현23_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 4321_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned qmffor91@naver.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 17:18
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p23
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 이지현23_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 4321_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned qmffor91@naver.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 17:18
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@3f9f71ff
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p09
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 김태욱09
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned zzxsx484@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 17:15
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p09
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 김태욱09
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned zzxsx484@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 17:15
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@fabb651
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 3
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p090
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 김태욱09
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned zzxsx484@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 17:15
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 3
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p090
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 김태욱09
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned zzxsx484@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 17:15
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@27e5b378
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 4
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 김동호03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 1130
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned tubus1130@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 17:13
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 4
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 김동호03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 1130
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned tubus1130@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 17:13
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@523d6bdb
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 5
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p07
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 김주혜07_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 4321_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned joohea5943@naver.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 12:47
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 5
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p07
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 김주혜07_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 4321_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned joohea5943@naver.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 12:47
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@58496c97
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 6
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p18
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned ㅈㅇ03_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 1130_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned ung14@Naver.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 12:12
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 6
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p18
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned ㅈㅇ03_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 1130_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned ung14@Naver.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 12:12
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@ad3324b
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 7
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p28
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 최종희28
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned qnfao3474@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 12:08
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 7
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p28
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 최종희28
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned qnfao3474@gmail.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 12:08
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@3872bc37
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 8
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p88
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 강해리24
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 7589
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned audwlsgofl@naver.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 12:03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 8
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p88
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 강해리24
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 7589
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned audwlsgofl@naver.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 12:03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@1a87b51
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 9
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p20
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 이민재20_U_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 8520_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned plsk888@paran.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 12:03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 9
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p20
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 이민재20_U_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 8520_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned plsk888@paran.com_U
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 12:03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@12968227
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned p12
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 문서혜12
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned anstjgp@naver.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 12:03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(9) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(NUM) returned 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(uId) returned p12
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(NAME) returned 문서혜12
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(PASSWD) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(INTLEVEL) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(RECOMMEND) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(EMAIL) returned anstjgp@naver.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(REGDT) returned 12:03
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(TOTALCNT) returned 16
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:390 - 
+|----|-----|----------|-------|---------|----------|-----------------------|------|---------|
+|num |uid  |name      |passwd |intlevel |recommend |email                  |regdt |totalcnt |
+|----|-----|----------|-------|---------|----------|-----------------------|------|---------|
+|1   |p23  |이지현23_U   |4321_U |2        |10        |qmffor91@naver.com_U   |17:18 |16       |
+|2   |p09  |김태욱09     |4321   |1        |0         |zzxsx484@gmail.com     |17:15 |16       |
+|3   |p090 |김태욱09     |4321   |2        |2         |zzxsx484@gmail.com     |17:15 |16       |
+|4   |p03  |김동호03     |1130   |1        |0         |tubus1130@gmail.com    |17:13 |16       |
+|5   |p07  |김주혜07_U   |4321_U |2        |10        |joohea5943@naver.com_U |12:47 |16       |
+|6   |p18  |ㅈㅇ03_U    |1130_U |2        |10        |ung14@Naver.com_U      |12:12 |16       |
+|7   |p28  |최종희28     |4321   |1        |0         |qnfao3474@gmail.com    |12:08 |16       |
+|8   |p88  |강해리24     |7589   |1        |0         |audwlsgofl@naver.com   |12:03 |16       |
+|9   |p20  |이민재20_U_U |8520_U |2        |10        |plsk888@paran.com_U    |12:03 |16       |
+|10  |p12  |문서혜12     |4321   |1        |0         |anstjgp@naver.com      |12:03 |16       |
+|----|-----|----------|-------|---------|----------|-----------------------|------|---------|
+
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[DEBUG], 2022-06-17 17:19:20 doRetrieve:137 - <==      Total: 10
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@693e4d19]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p23, name=이지현23_U, passwd=4321_U, level=SILVER, login=0, recommend=10, email=qmffor91@naver.com_U, regDt=17:18, toString()=DTO [num=1, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p09, name=김태욱09, passwd=4321, level=BASIC, login=0, recommend=0, email=zzxsx484@gmail.com, regDt=17:15, toString()=DTO [num=2, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p090, name=김태욱09, passwd=4321, level=SILVER, login=0, recommend=2, email=zzxsx484@gmail.com, regDt=17:15, toString()=DTO [num=3, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=0, recommend=0, email=tubus1130@gmail.com, regDt=17:13, toString()=DTO [num=4, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p07, name=김주혜07_U, passwd=4321_U, level=SILVER, login=0, recommend=10, email=joohea5943@naver.com_U, regDt=12:47, toString()=DTO [num=5, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p18, name=ㅈㅇ03_U, passwd=1130_U, level=SILVER, login=0, recommend=10, email=ung14@Naver.com_U, regDt=12:12, toString()=DTO [num=6, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p28, name=최종희28, passwd=4321, level=BASIC, login=0, recommend=0, email=qnfao3474@gmail.com, regDt=12:08, toString()=DTO [num=7, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p88, name=강해리24, passwd=7589, level=BASIC, login=0, recommend=0, email=audwlsgofl@naver.com, regDt=12:03, toString()=DTO [num=8, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p20, name=이민재20_U_U, passwd=8520_U, level=SILVER, login=0, recommend=10, email=plsk888@paran.com_U, regDt=12:03, toString()=DTO [num=9, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:195 - UserVO [uId=p12, name=문서혜12, passwd=4321, level=BASIC, login=0, recommend=0, email=anstjgp@naver.com, regDt=12:03, toString()=DTO [num=10, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p23, name=이지현23_U, passwd=4321_U, level=SILVER, login=0, recommend=10, email=qmffor91@naver.com_U, regDt=17:18, toString()=DTO [num=1, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p09, name=김태욱09, passwd=4321, level=BASIC, login=0, recommend=0, email=zzxsx484@gmail.com, regDt=17:15, toString()=DTO [num=2, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p090, name=김태욱09, passwd=4321, level=SILVER, login=0, recommend=2, email=zzxsx484@gmail.com, regDt=17:15, toString()=DTO [num=3, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p03, name=김동호03, passwd=1130, level=BASIC, login=0, recommend=0, email=tubus1130@gmail.com, regDt=17:13, toString()=DTO [num=4, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p07, name=김주혜07_U, passwd=4321_U, level=SILVER, login=0, recommend=10, email=joohea5943@naver.com_U, regDt=12:47, toString()=DTO [num=5, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p18, name=ㅈㅇ03_U, passwd=1130_U, level=SILVER, login=0, recommend=10, email=ung14@Naver.com_U, regDt=12:12, toString()=DTO [num=6, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p28, name=최종희28, passwd=4321, level=BASIC, login=0, recommend=0, email=qnfao3474@gmail.com, regDt=12:08, toString()=DTO [num=7, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p88, name=강해리24, passwd=7589, level=BASIC, login=0, recommend=0, email=audwlsgofl@naver.com, regDt=12:03, toString()=DTO [num=8, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p20, name=이민재20_U_U, passwd=8520_U, level=SILVER, login=0, recommend=10, email=plsk888@paran.com_U, regDt=12:03, toString()=DTO [num=9, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:75 - vo=UserVO [uId=p12, name=문서혜12, passwd=4321, level=BASIC, login=0, recommend=0, email=anstjgp@naver.com, regDt=12:03, toString()=DTO [num=10, totalCnt=16]]
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:232 - ====================
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:233 - =9.tearDown()=
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:234 - ====================
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 AbstractDirtiesContextTestExecutionListener:108 - After test method: context [DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = com.pcwk.ehr.JunitUserDaoTest@313b2ea6, testMethod = doRetrieve@JunitUserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG], 2022-06-17 17:19:20 ProfileValueUtils:70 - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:20 ProfileValueUtils:83 - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.pcwk.ehr.JunitUserDaoTest]
+[DEBUG], 2022-06-17 17:19:20 DependencyInjectionTestExecutionListener:81 - Performing dependency injection for test context [[DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = com.pcwk.ehr.JunitUserDaoTest@3531f3ca, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 AbstractDirtiesContextTestExecutionListener:108 - Before test method: context [DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = com.pcwk.ehr.JunitUserDaoTest@3531f3ca, testMethod = addAndGet@JunitUserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:47 - ====================
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:48 - =0.setUp()=
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:49 - ====================
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:62 - context:org.springframework.context.support.GenericApplicationContext@5552768b, started on Fri Jun 17 17:19:18 KST 2022
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:63 - dao:com.pcwk.ehr.user.dao.UserDaoImpl@4fe01803
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:162 - ====================
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:163 - =1.addAndGet()=
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:164 - ====================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:170 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:171 - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:172 - statement:com.pcwk.ehr.user.doDelete
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:173 - ==============================
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4867ab9f] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:20 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member 
+         WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@65f2f9b0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - ==> Parameters: p77(String)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p77'  {executed in 2 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 1
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - <==    Updates: 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4867ab9f]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:176 - flag:1
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:170 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:171 - param:UserVO [uId=p770, name=박훈0, passwd=4321, level=SILVER, login=50, recommend=2, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:172 - statement:com.pcwk.ehr.user.doDelete
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:173 - ==============================
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38fc5554] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:20 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member 
+         WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5e8cda75
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p770") returned 
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - ==> Parameters: p770(String)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p770'  {executed in 0 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 0
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - <==    Updates: 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@38fc5554]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:176 - flag:0
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:170 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:171 - param:UserVO [uId=p7700, name=박훈00, passwd=4321, level=GOLD, login=100, recommend=31, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:172 - statement:com.pcwk.ehr.user.doDelete
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:173 - ==============================
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f049056] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:20 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - ==>  Preparing: DELETE FROM hr_member WHERE u_id = ?
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(DELETE FROM hr_member 
+         WHERE u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@64968732
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p7700") returned 
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - ==> Parameters: p7700(String)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. DELETE FROM hr_member WHERE u_id = 'p7700'  {executed in 1 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 0
+[DEBUG], 2022-06-17 17:19:20 doDelete:137 - <==    Updates: 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3f049056]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:176 - flag:0
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:82 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:83 - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:84 - statement:com.pcwk.ehr.user.getCount
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:85 - ==============================
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e1a3801] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:20 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 getCount:137 - ==>  Preparing: SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE ? ||'%'
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) AS cnt   
+		 FROM  hr_member          
+		 WHERE u_id LIKE ?  ||'%') returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@6fd12c5
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[DEBUG], 2022-06-17 17:19:20 getCount:137 - ==> Parameters: p77(String)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE 'p77' ||'%'  {executed in 2 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@1de0a46c
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@4d1f1ff5
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@222afc67
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:390 - 
+|----|
+|cnt |
+|----|
+|0   |
+|----|
+
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[DEBUG], 2022-06-17 17:19:20 getCount:137 - <==      Total: 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e1a3801]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:88 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:89 - count=0
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:90 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:110 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:111 - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:112 - statement:com.pcwk.ehr.user.doInsert
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:113 - ==============================
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54f4a7f0] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:20 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 doInsert:137 - ==>  Preparing: INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES ( ?, ?, ?, ?, ?, ?, ?, SYSDATE )
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(INSERT INTO hr_member (
+			         u_id,          
+			         name,          
+			         passwd,        
+			         u_level,       
+			         login,        
+			         recommend,    
+			         email,        
+			         reg_dt        
+		 ) VALUES (             
+		     ?,                 
+		     ?,                 
+		     ?,                 
+		     ?,                 
+		     ?,                 
+		     ?,                 
+		     ?,                 
+		     SYSDATE            
+		 )) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@61a1ea2c
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(2, "박훈") returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(3, "4321") returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(4, 1) returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(5, 1) returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setInt(DelegatingPreparedStatement.java:120)
+2. PreparedStatement.setInt(6, 0) returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(7, "qkrgns0514@naver.com") returned 
+[DEBUG], 2022-06-17 17:19:20 doInsert:137 - ==> Parameters: p77(String), 박훈(String), 4321(String), 1(Integer), 1(Integer), 0(Integer), qkrgns0514@naver.com(String)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. INSERT INTO hr_member ( u_id, name, passwd, u_level, login, recommend, email, reg_dt ) VALUES 
+( 'p77', '박훈', '4321', 1, 1, 0, 'qkrgns0514@naver.com', SYSDATE )  {executed in 2 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getUpdateCount(DelegatingStatement.java:267)
+2. PreparedStatement.getUpdateCount() returned 1
+[DEBUG], 2022-06-17 17:19:20 doInsert:137 - <==    Updates: 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54f4a7f0]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:116 - flag:1
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:82 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:83 - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:84 - statement:com.pcwk.ehr.user.getCount
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:85 - ==============================
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@149debbb] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:20 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 getCount:137 - ==>  Preparing: SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE ? ||'%'
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT COUNT(*) AS cnt   
+		 FROM  hr_member          
+		 WHERE u_id LIKE ?  ||'%') returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@25cd49a4
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[DEBUG], 2022-06-17 17:19:20 getCount:137 - ==> Parameters: p77(String)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT COUNT(*) AS cnt FROM hr_member WHERE u_id LIKE 'p77' ||'%'  {executed in 1 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@5477a1ca
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@3ae9d1e2
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@41522537
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(CNT) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:390 - 
+|----|
+|cnt |
+|----|
+|1   |
+|----|
+
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[DEBUG], 2022-06-17 17:19:20 getCount:137 - <==      Total: 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@149debbb]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:88 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:89 - count=1
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:90 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:150 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:151 - param:UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=날짜_사용안함, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:152 - statement:com.pcwk.ehr.user.doSelectOne
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:153 - ==============================
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Creating a new SqlSession
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@670d4d38] was not registered for synchronization because synchronization is not active
+[DEBUG], 2022-06-17 17:19:20 DataSourceUtils:116 - Fetching JDBC Connection from DataSource
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:114)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.toString(DelegatingConnection.java:118)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[DEBUG], 2022-06-17 17:19:20 SpringManagedTransaction:49 - JDBC Connection [jdbc:oracle:thin:@192.168.3.101:1521:xe, UserName=SPRING, Oracle JDBC driver] will not be managed by Spring
+[DEBUG], 2022-06-17 17:19:20 doSelectOne:137 - ==>  Preparing: SELECT u_id, name, passwd, u_level, login, recommend, email, TO_CHAR(reg_dt,'yyyy-mm-dd hh24:mi:ss') AS reg_dt FROM hr_member WHERE u_id = ?
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. PreparedStatement.new PreparedStatement returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:281)
+2. Connection.prepareStatement(SELECT u_id,                                    
+		        name,                                    
+		        passwd,                                  
+		        u_level,                                
+		        login,                                  
+		        recommend,                              
+		        email,                                  
+		        TO_CHAR(reg_dt,'yyyy-mm-dd hh24:mi:ss') AS reg_dt
+         FROM   hr_member                                    
+         WHERE  u_id = ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@131ff6fa
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.setString(DelegatingPreparedStatement.java:135)
+2. PreparedStatement.setString(1, "p77") returned 
+[DEBUG], 2022-06-17 17:19:20 doSelectOne:137 - ==> Parameters: p77(String)
+[INFO], 2022-06-17 17:19:20 log4j2:243 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. SELECT u_id, name, passwd, u_level, login, recommend, email, TO_CHAR(reg_dt,'yyyy-mm-dd hh24:mi:ss') 
+AS reg_dt FROM hr_member WHERE u_id = 'p77'  {executed in 1 ms}
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+2. PreparedStatement.execute() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. ResultSet.new ResultSet returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.getResultSet(DelegatingStatement.java:219)
+2. PreparedStatement.getResultSet() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@43b40233
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@23eff5d1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getType(DelegatingResultSet.java:394)
+2. ResultSet.getType() returned 1003
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getMetaData(DelegatingResultSet.java:322)
+2. ResultSet.getMetaData() returned oracle.jdbc.driver.OracleResultSetMetaData@2184b4f4
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(1) returned p77
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(2) returned 박훈
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(3) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(4) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(5) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(6) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(7) returned qkrgns0514@naver.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:213)
+2. ResultSet.getString(8) returned 2022-06-17 17:19:22
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(u_id) returned p77
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(name) returned 박훈
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(passwd) returned 4321
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(u_level) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(login) returned 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getInt(DelegatingResultSet.java:275)
+2. ResultSet.getInt(recommend) returned 0
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.wasNull(DelegatingResultSet.java:210)
+2. ResultSet.wasNull() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(email) returned qkrgns0514@naver.com
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.getString(DelegatingResultSet.java:263)
+2. ResultSet.getString(reg_dt) returned 2022-06-17 17:19:22
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.isClosed(DelegatingResultSet.java:688)
+2. ResultSet.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:390 - 
+|-----|-----|-------|--------|------|----------|---------------------|--------------------|
+|u_id |name |passwd |u_level |login |recommend |email                |reg_dt              |
+|-----|-----|-------|--------|------|----------|---------------------|--------------------|
+|p77  |박훈   |4321   |1       |1     |0         |qkrgns0514@naver.com |2022-06-17 17:19:22 |
+|-----|-----|-------|--------|------|----------|---------------------|--------------------|
+
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
+2. ResultSet.next() returned false
+[DEBUG], 2022-06-17 17:19:20 doSelectOne:137 - <==      Total: 1
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingResultSet.close(DelegatingResultSet.java:187)
+2. ResultSet.close() returned void
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:345)
+2. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@280e8a1a
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingStatement.close(DelegatingStatement.java:168)
+2. PreparedStatement.close() returned 
+[DEBUG], 2022-06-17 17:19:20 SqlSessionUtils:49 - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@670d4d38]
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:72)
+2. Connection.isClosed() returned false
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.clearWarnings(DelegatingConnection.java:331)
+2. Connection.clearWarnings() returned 
+[INFO], 2022-06-17 17:19:20 log4j2:197 -  org.apache.commons.dbcp.DelegatingConnection.getAutoCommit(DelegatingConnection.java:337)
+2. Connection.getAutoCommit() returned true
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:156 - ==============================
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:157 - outVO****=UserVO [uId=p77, name=박훈, passwd=4321, level=BASIC, login=1, recommend=0, email=qkrgns0514@naver.com, regDt=2022-06-17 17:19:22, toString()=DTO [num=0, totalCnt=0]]
+[DEBUG], 2022-06-17 17:19:20 UserDaoImpl:158 - ==============================
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:232 - ====================
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:233 - =9.tearDown()=
+[DEBUG], 2022-06-17 17:19:20 JunitUserDaoTest:234 - ====================
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 AbstractDirtiesContextTestExecutionListener:108 - After test method: context [DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = com.pcwk.ehr.JunitUserDaoTest@3531f3ca, testMethod = addAndGet@JunitUserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+[DEBUG], 2022-06-17 17:19:20 DefaultCacheAwareContextLoaderDelegate:137 - Retrieved ApplicationContext [1431467659] from cache with key [[MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[DEBUG], 2022-06-17 17:19:20 cache:290 - Spring test ApplicationContext cache statistics: [DefaultContextCache@2a037324 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+[DEBUG], 2022-06-17 17:19:20 AbstractDirtiesContextTestExecutionListener:143 - After test class: context [DefaultTestContext@424e1977 testClass = JunitUserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@10d68fcd testClass = JunitUserDaoTest, locations = '{file:src/main/webapp/WEB-INF/spring/root-context.xml, file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null].
+[DEBUG], 2022-06-17 17:19:20 GenericApplicationContext:1049 - Closing org.springframework.context.support.GenericApplicationContext@5552768b, started on Fri Jun 17 17:19:18 KST 2022

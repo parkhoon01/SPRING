@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.fire.user">
+  <!-- 10:uId, 20:name,30:email -->
+  <sql id="searchCondition">
+   <where>
+	   <choose>
+	    <when test=" '10' == searchDiv  and '' != searchWord ">
+	       u_id LIKE #{searchWord} || '%'
+	    </when>
+	    <when test=" '20' == searchDiv  and '' != searchWord ">
+	       name LIKE #{searchWord} || '%'
+	    </when>
+	    <when test=" '30' == searchDiv  and '' != searchWord ">
+	       email LIKE #{searchWord} || '%'
+	    </when>
+	   </choose>
+   </where>        
+   
+  </sql>
+  
+  <select id="idCheck" parameterType="UserVO" resultType="int">
+    SELECT COUNT(*) AS cnt
+	FROM hr_member
+	WHERE u_id = #{uId}
+  </select>
+  
+  <!-- pageSizem, pageNum, 검색구분, 검색어 -->
+  <select id="doRetrieve" parameterType="SearchVO"  resultType="UserVO">
+	SELECT    A.*, B.*
+        FROM(
+             SELECT    tt1.rnum AS num,
+                       tt1.id,
+                       tt1.n_name,
+                       tt1.password,
+                       tt1.name,
+                       tt1.email,
+                       tt1.birth,
+                       tt1.sex,
+                       tt1.tel,
+                       tt1.admin_p,
+                       tt1.score,
+                       -- reg_dt가 금일이면 HH24:MI 아니면 yyyy-mm-dd
+                       DECODE(TO_CHAR(SYSDATE, 'yyyymmdd'),TO_CHAR(tt1.reg_dt, 'yyyymmdd'),
+                              TO_CHAR(tt1.reg_dt, 'HH24:MI'),
+                              TO_CHAR(tt1.reg_dt, 'yyyy-mm-dd')) regDt
+             FROM(
+                  SELECT    ROWNUM AS RNUM, t1.*
+                  FROM(
+                       SELECT *
+                       FROM member
+                       --검색조건
+                       <include refid="searchCondition"></include>
+        
+                       ORDER BY reg_dt DESC
+                  )t1
+                  WHERE ROWNUM <![CDATA[ <= #{pageSize} * (#{pageNum} - 1) + #{pageSize}]]>
+             )tt1
+             WHERE rnum <![CDATA[ >= (#{pageSize} * (#{pageNum} - 1) + 1)]]>
+        )A
+        CROSS JOIN
+        (
+             SELECT COUNT(*) AS totalCnt
+             FROM member
+             -- 검색조건
+             <include refid="searchCondition"></include>
+        )B
+  </select>
+  
+  
+  <update id="doUpdate" parameterType="UserVO">
+	 UPDATE member       
+     SET    id       = #{id},                                             
+			n_name   = #{nName},                                         
+			password = #{password},                                       
+			name     = #{name},                                           
+			email    = #{email},                                          
+			birth    = #{birth},                                          
+			sex      = #{sex},                                            
+			tel      = #{tel},                                            
+			admin_p  = #{adminP},                                        
+			score    = #{score},                                          
+			reg_dt   = #{regDt} 
+     WHERE  id = #{id}    
+  </update>
+
+
+
+  <delete id="deleteAll">
+     DELETE FROM member
+  </delete>
+
+
+  <select id="getAll" parameterType="UserVO" resultType="UserVO">
+	  SELECT id,  
+		     n_name,                         
+	         password,
+	         name,                      
+	         email,                       
+	         birth,
+	         sex,
+	         tel,
+	         admin_p,
+	         score,                    
+             TO_CHAR(reg_dt,'yyyy-mm-dd hh24:mi:ss') AS regDt   
+     FROM member                                   
+     WHERE id LIKE #{id} ||'%'               
+     ORDER BY id          
+  </select>
+
+
+  <select id="getCount" parameterType="UserVO" resultType="int">
+	SELECT COUNT(*) AS cnt   
+    FROM  member          
+    WHERE id LIKE #{id}  ||'%' 
+  </select>
+  
+  
+  <resultMap type="UserVO" id="userResultMap">
+   <id     property="id"       column="id"/>
+        <result property="nName"    column="n_name"/>
+        <result property="password" column="password"/>
+        <result property="pNum"     column="p_num"/>
+        <result property="name"     column="name"/>
+        <result property="email"    column="email"/>
+        <result property="birth"    column="birth"/>
+        <result property="sex"      column="sex"/>
+        <result property="tel"      column="tel"/>
+        <result property="adminP"   column="admin_p"/>
+        <result property="score"    column="score"/>
+        <result property="mList"    column="m_list"/>
+        <result property="regDt"    column="reg_dt"/>
+        <result property="regId"    column="reg_id"/>
+        <result property="modDt"    column="mod_dt"/>
+        <result property="modId"    column="mod_id"/>
+  </resultMap>
+  <!-- namespace+id = com.pcwk.ehr.user.doSelectOne-->
+ 
+  <select id="doSelectOne" parameterType="UserVO" resultMap="userResultMap">
+       <![CDATA[ 
+         SELECT
+             id,
+             n_name,
+             password,
+             p_num,
+             name,
+             email,
+             birth,
+             sex,
+             tel,
+             admin_p,
+             score,
+             m_list,
+             reg_dt,
+             reg_id,
+             mod_dt,
+             mod_id
+         FROM   member                                    
+         WHERE  id = #{id}  
+         ]]> 
+  </select>
+  
+  
+  <delete id="doDelete" parameterType="UserVO">
+	DELETE FROM member 
+    WHERE id = #{id}           
+  </delete>
+
+  <insert id="doInsert" parameterType="UserVO">
+	 INSERT INTO member (
+             id,
+             n_name,
+             password,
+             p_num,
+             name,
+             email,
+             birth,
+             sex,
+             tel,
+             admin_p,
+             score,
+             m_list,
+             reg_dt,
+             reg_id,
+             mod_dt,
+             mod_id
+        ) VALUES (
+             #{id},
+             #{nName},
+             #{password},
+             #{pNum},
+             #{name},
+             #{email},
+             #{birth},
+             #{sex},
+             #{tel},
+             #{adminP},
+             #{score},
+             #{mList},
+             SYSDATE,
+             #{regId},
+             SYSDATE,
+             #{modId}
+        )      
+  </insert>
+
+</mapper>

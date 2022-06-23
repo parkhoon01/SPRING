@@ -52,9 +52,10 @@ public class JunitUserDaoTest {
 //				String sex, String tel, String adminP, int score, int mList, String regDt, String regId, String modDt,
 //				String modId) {
 		user01 = new UserVO("fire1", "ADMIN1", "1234", "1", "박훈", "qkrgns0514@naver.com", "1996/05/14", "MAN", "010-2001-1393", "Y", 0, 0, "", "ADMIN1", "", "ADMIN1");	
-//		user01 = new UserVO("p77", "박훈", "4321", Level.BASIC, 1, 0, "qkrgns0514@naver.com", "날짜_사용안함");
-//		user02 = new UserVO("p770", "박훈0", "4321", Level.SILVER, 50, 2, "qkrgns0514@naver.com", "날짜_사용안함");
-//		user03 = new UserVO("p7700", "박훈00", "4321", Level.GOLD, 100, 31, "qkrgns0514@naver.com", "날짜_사용안함");
+		user02 = new UserVO("fire2", "ADMIN1", "1234", "1", "박훈", "qkrgns0514@naver.com", "1996/05/14", "MAN", "010-2001-1393", "Y", 0, 0, "", "ADMIN1", "", "ADMIN1");	
+//		user03 = new UserVO("fire3", "박훈0", "4321", Level.SILVER, 50, 2, "qkrgns0514@naver.com", "날짜_사용안함");
+//		user04 = new UserVO("fire4", "박훈00", "4321", Level.GOLD, 100, 31, "qkrgns0514@naver.com", "날짜_사용안함");
+//		user04 = new UserVO("fire5", "박훈00", "4321", Level.GOLD, 100, 31, "qkrgns0514@naver.com", "날짜_사용안함");
 
 		LOG.debug("context:" + context);
 		LOG.debug("dao:" + dao);
@@ -159,16 +160,16 @@ public class JunitUserDaoTest {
 
 		// 전체 삭제
 		try {
-			// dao.deleteAll();
+//			 dao.deleteAll();
 			dao.doDelete(user01);
 //			dao.doDelete(user02);
 //			dao.doDelete(user03);
 
-			assertEquals(0, dao.getCount(user01));
+//			assertEquals(0, dao.getCount(user01));
 
 			// 1건 추가
 			dao.doInsert(user01);
-			assertEquals(1, dao.getCount(user01));
+//			assertEquals(5, dao.getCount(user01));
 
 			// 1건 추가
 //			dao.doInsert(user02);
@@ -182,7 +183,7 @@ public class JunitUserDaoTest {
 //			UserVO vsUser02 = dao.doSelectOne(user02);
 //			isSameUser(vsUser02, user02);
 
-//		dao.doRetrieve(user01);
+			dao.doRetrieve(searchVO);
 
 		} catch (SQLException e) {
 			LOG.debug("------------------");

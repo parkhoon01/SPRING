@@ -31,6 +31,12 @@ public class UserController {
 		
 	}
 	
+	public String doUpdate(UserVO inVO) throws SQLException {
+		String jsonString = "";
+		
+		return jsonString;
+	}
+	
 	@RequestMapping(value = "/add.do", method = RequestMethod.POST,
 			produces = "application/json;charset=UTF-8")
 	@ResponseBody // 스프링에서 비동기 처리를 하는 경우, Http 요청의 본문 body부분이 전달된다.

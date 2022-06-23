@@ -23,6 +23,30 @@
        <property name="mapperLocations" value="classpath:mapper/**/*.xml"/>
     </bean>
     
+    <!-- 개발에 사용하는 Dummy Mail  -->
+<!--     <bean id="dummyMailSender" class="com.pcwk.ehr.cmn.DummyMailSender"></bean> -->
+    <!-- Naver smtp 계정 
+         SMTP 간이 우편 전송 프로토콜(Simple Mail Transfer Protocol)의 약자. 이메일 전송에 사용되는 네트워크 프로토콜이다.
+    -->
+    <bean id="mailSenderImpl" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+       <property name="host" value="smtp.naver.com"/>
+       <property name="port" value="465"/>
+       <property name="username" value="jamesol@naver.com"/>
+       <property name="password" value=""/>
+       <property name="defaultEncoding" value="utf-8"/>
+       <property name="javaMailProperties">
+           <props>
+               <prop key="mail.smtp.host">smtp.naver.com</prop>
+               <prop key="mail.smtp.port">465</prop>
+               <prop key="mail.smtp.auth">true</prop>
+               <prop key="mail.smtp.ssl.protocols">TLSv1.2</prop>
+               <prop key="mail.smtp.ssl.enable">true</prop>
+               <prop key="mail.smtp.ssl.trust">smtp.naver.com</prop>
+               <prop key="mail.debug">true</prop>
+           </props>
+       </property>
+    </bean>
+        
     <!--JDBC DataSourceTransactionManager -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
        <property name="dataSource" ref="dataSource"/>
@@ -40,7 +64,7 @@
     
     <!-- pointcut *Service : com.pcwk.ehr.user.service-->
     <aop:config>
-       <aop:pointcut expression="execution(* com.pcwk.fire..service.*Impl.*(..))" id="txPointCut"/>
+       <aop:pointcut expression="execution(* com.pcwk.ehr..service.*Impl.*(..))" id="txPointCut"/>
        <!-- 트랜잭션 처리를 위한 advisor: advice+pointcut -->
        <aop:advisor advice-ref="txAdvice"
                     pointcut-ref="txPointCut"/>
